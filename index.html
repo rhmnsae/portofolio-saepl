@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Saepul Rohman - IT Support Enthusiast | Hardware, Software & Network Troubleshooting. Bachelor of Informatics Engineering.">
+    <meta name="keywords" content="Saepul Rohman, Portfolio, IT Support, Web Developer, Bandung">
+    <meta name="author" content="Saepul Rohman">
+    <title>Saepul Rohman | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" id="navMenu">
+                <div class="sidebar-header">
+                    <span class="sidebar-title">MENU</span>
+                </div>
+                <ul class="sidebar-nav-list">
+                    <li><a href="#hero" class="nav-link active" data-section="hero"><span data-i18n="nav_home">Home</span></a></li>
+                    <li><a href="#about" class="nav-link" data-section="about"><span data-i18n="nav_about">About</span></a></li>
+                    <li><a href="#experience" class="nav-link" data-section="experience"><span data-i18n="nav_experience">Experience</span></a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills"><span data-i18n="nav_skills">Skills</span></a></li>
+                    <li><a href="#portfolio" class="nav-link" data-section="portfolio"><span data-i18n="nav_portfolio">Portfolio</span></a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact"><span data-i18n="nav_contact">Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <!-- Language Switcher -->
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang="en" title="English">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="id" title="Bahasa Indonesia">ID</button>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-animate="fade-up" data-i18n="hero_greeting">Hello, I'm</p>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="100">
+                    <span class="name-first">Saepul</span>
+                    <span class="name-last">Rohman</span>
+                </h1>
+                <div class="hero-title-wrapper" data-animate="fade-up" data-delay="200">
+                    <span class="hero-title-label" data-i18n="hero_iam">I'm a</span>
+                    <span class="hero-title" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description" data-animate="fade-up" data-delay="300" data-i18n="hero_desc">
+                    IT Support Enthusiast | Hardware, Software & Network Troubleshooting
+                </p>
+                <div class="hero-socials" data-animate="fade-up" data-delay="400">
+                    <a href="mailto:saepulrohman3445@gmail.com" class="social-circle" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6283842707945" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/saeplll/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/rhmnsae" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="hero-cta" data-animate="fade-up" data-delay="450">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span data-i18n="hero_btn_portfolio">View Portfolio</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span data-i18n="hero_btn_contact">Contact Me</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="500">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="7">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero_stat_exp">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero_stat_company">Companies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero_stat_projects">Projects Done</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-left" data-delay="200">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-border"></div>
+                    <div class="hero-image-container">
+                        <img src="image/foto-saya/me.jpg" alt="Saepul Rohman" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
+                    <div class="floating-badge badge-2"><i class="fas fa-server"></i></div>
+                    <div class="floating-badge badge-3"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="600">
+            <span data-i18n="hero_scroll">Scroll down</span>
+            <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="about_title">Get to Know Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-animate="fade-right">
+                    <div class="about-image-card">
+                        <img src="image/foto-saya/me.jpg" alt="Saepul Rohman" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">7+</span>
+                        <span class="exp-text" data-i18n-html="about_exp_text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-info" data-animate="fade-left">
+                    <h3 class="about-subtitle" data-i18n="about_subtitle">IT Support Enthusiast | Hardware, Software &
+                        Network Troubleshooting</h3>
+                    <p class="about-text" data-i18n-html="about_text_1">
+                        Bachelor of Informatics Engineering graduate from <strong>Adhirajasa Reswara Sanjaya
+                            University</strong> with strong interest and capabilities in IT Support. Experienced in data
+                        management, device maintenance, and basic system & network troubleshooting through part-time and
+                        internship roles.
+                    </p>
+                    <p class="about-text" data-i18n-html="about_text_2">
+                        Skilled in software–hardware installation, network connectivity checks, and office IT device
+                        maintenance. Detail-oriented, responsible, and highly motivated to support efficient and stable
+                        IT operations.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="detail-label" data-i18n="about_location_label">Location</span>
+                                <span class="detail-value" data-i18n="about_location_value">Bandung, West Java</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="detail-label" data-i18n="about_edu_label">Education</span>
+                                <span class="detail-value" data-i18n="about_edu_value">Bachelor of Informatics
+                                    Engineering</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <span class="detail-label" data-i18n="about_univ_label">University</span>
+                                <span class="detail-value">ARS University</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="detail-label">Status</span>
+                                <span class="detail-value">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span data-i18n="hero_btn_contact">Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="exp_title">My Career Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Token Maker</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> PT. Nolimit Teknologi
+                                        Indonesia - Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-freelance">Freelance</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Mar 2025 – <span
+                                        data-i18n="exp_present">Present</span></span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp1_task1">Created and managed
+                                    social media accounts (Twitter, Instagram, YouTube) for scraping purposes.</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp1_task2">Uploaded accounts to
+                                    database, created documentation, and handled account issues (VPN, OTP,
+                                    banned).</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Social Media</span><span>Database</span><span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-database"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Data Quality Assurance</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> PT. Nolimit Teknologi
+                                        Indonesia - Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-freelance">Freelance</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2024 – Mar
+                                    2025</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp2_task1">Managed daily
+                                    operations and ensured data accuracy and reliability.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp2_task2">Handled data requests
+                                    and resolved data-related issues efficiently.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp2_task3">Collaborated with
+                                    cross-functional stakeholders to gather, clarify, and communicate data
+                                    requirements.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Data QA</span><span>Python</span><span>Linux</span><span>SSH
+                                Server</span><span>Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-headset"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">IT Support (<span
+                                            data-i18n="exp_intern">Internship</span>)</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> PT. Dago Alam Indah -
+                                        Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-magang" data-i18n="badge_intern">Internship</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Dec 2023 – Jun
+                                    2024</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp3_task1">Performed network
+                                    maintenance, troubleshooting, device installation, and technical support.</span>
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp3_task2">Developed warehouse
+                                    application and tenant attendance application.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp3_task3">Created banners, social
+                                    media content, and character designs.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>IT Support</span><span>Networking</span><span>Web
+                                Development</span><span>Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <div>
+                                    <h3 class="timeline-company" data-i18n="exp4_title">Phone & Computer Technician</h3>
+                                    <p class="timeline-location"><i class="fas fa-home"></i> oprekHP – Bandung (<span
+                                            data-i18n="exp_parttime">Part-time</span>)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-parttime">Part-time</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Feb 2022 – <span
+                                        data-i18n="exp_present">Present</span></span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp4_task1">Serviced Android and
+                                    iPhone devices, including software and hardware troubleshooting.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp4_task2">Handled Android system
+                                    modifications such as rooting, custom ROM installation, TWRP, bootloader unlocking,
+                                    and iPhone bypass.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp4_task3">Performed computer and
+                                    laptop repair and maintenance, including OS installation and device
+                                    troubleshooting.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Mobile
+                                Repair</span><span>Android</span><span>iOS</span><span>Computer</span><span>Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-desktop"></i></div>
+                                <div>
+                                    <h3 class="timeline-company" data-i18n="exp5_title">Internet Café Operator</h3>
+                                    <p class="timeline-location"><i class="fas fa-store"></i> OPIKH NETZ – Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-fulltime">Full-time</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Apr 2017 – Oct
+                                    2019</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp5_task1">Managed internet café
+                                    operations and daily income–expense recording.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp5_task2">Performed installation,
+                                    configuration, and hardware/software troubleshooting on client and server
+                                    computers.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp5_task3">Maintained LAN network,
+                                    monitored internet connectivity, and configured basic router settings to ensure
+                                    network stability.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Hardware</span><span>Software</span><span>Networking</span><span>Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="skills_title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-animate="fade-up">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-code"></i></div>
+                        <h3 data-i18n="skills_cat_prog">Programming & Web</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">HTML & CSS</span><span
+                                    class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">JavaScript</span><span
+                                    class="skill-percent">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Python</span><span
+                                    class="skill-percent">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">MySQL</span><span
+                                    class="skill-percent">70%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Flutter</span><span
+                                    class="skill-percent">65%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-animate="fade-up" data-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-tools"></i></div>
+                        <h3>IT Support & Networking</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Technical Support</span><span
+                                    class="skill-percent">90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Network Support</span><span
+                                    class="skill-percent">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Linux</span><span
+                                    class="skill-percent">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Hardware Troubleshooting</span><span
+                                    class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Mobile Repair</span><span
+                                    class="skill-percent">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-animate="fade-up" data-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-file-alt"></i></div>
+                        <h3 data-i18n="skills_cat_office">Office & Productivity</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Microsoft Office Suite</span><span
+                                    class="skill-percent">90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Google Workspace</span><span
+                                    class="skill-percent">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-animate="fade-up" data-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-brain"></i></div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item"><i class="fas fa-lightbulb"></i><span
+                                data-i18n="soft_problem">Problem Solving</span></div>
+                        <div class="soft-skill-item"><i class="fas fa-users"></i><span
+                                data-i18n="soft_team">Teamwork</span></div>
+                        <div class="soft-skill-item"><i class="fas fa-bolt"></i><span data-i18n="soft_fast">Fast
+                                Learner</span></div>
+                        <div class="soft-skill-item"><i class="fas fa-sync-alt"></i><span
+                                data-i18n="soft_adaptive">Adaptive</span></div>
+                        <div class="soft-skill-item"><i class="fas fa-chess"></i><span
+                                data-i18n="soft_critical">Critical Thinking</span></div>
+                        <div class="soft-skill-item"><i class="fas fa-search"></i><span
+                                data-i18n="soft_detail">Attention to Detail</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="portfolio_title">My Recent Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-category="iot" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <img src="image/tempat-sampah-otomatis/1.jpeg" alt="Tempat Sampah Otomatis" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryIot1()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">IoT</span>
+                        <h3 class="portfolio-title" data-i18n="proj1_title">Automatic Trash Bin</h3>
+                        <p class="portfolio-desc" data-i18n="proj1_desc">IoT-based automatic trash bin using ultrasonic sensor to detect objects and servo motor to open the lid automatically.</p>
+                        <div class="portfolio-tech"><span>Arduino</span><span>Ultrasonic Sensor</span><span>Servo Motor</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/oprek-website.png" alt="oprekHP Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://oprekhp.ct.ws/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj2_title">oprekHP Website</h3>
+                        <p class="portfolio-desc" data-i18n="proj2_desc">Website for phone and computer service
+                            business, providing information about repair services, pricing, and contact.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/aplikasi-harsaedu/Home.png" alt="HarsaEdu App" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryMobile()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj3_title">HarsaEdu - LMS App</h3>
+                        <p class="portfolio-desc" data-i18n="proj3_desc">Learning Management System mobile application with class packages, subscriptions, recommendations, and notification features.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>REST API</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="ai" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/analisis-sentiment/6-hasilanalisis-dashboard.png" alt="Sentiment Analysis Dashboard" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGallery()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">AI / Machine Learning</span>
+                        <h3 class="portfolio-title" data-i18n="proj4_title">Sentiment Analysis - Twitter</h3>
+                        <p class="portfolio-desc" data-i18n="proj4_desc">AI-powered website for analyzing Twitter social
+                            media sentiment using machine learning models.</p>
+                        <div class="portfolio-tech"><span>Python</span><span>NLP</span><span>Machine
+                                Learning</span><span>indoBERT</span><span>Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/data-mbg-website.png" alt="Data MBG Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://rhmnsae.github.io/website-rt03/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj5_title">Data MBG Website</h3>
+                        <p class="portfolio-desc" data-i18n="proj5_desc">Web application for recording data of babies,
+                            pregnant women, and breastfeeding mothers who receive MBG (Makanan Bergizi Gratis).</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="iot" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/mobil-remote-bluetooth/1.jpeg" alt="Mobil Remote Bluetooth" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Photo" onclick="openGalleryIot2()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">IoT</span>
+                        <h3 class="portfolio-title" data-i18n="proj7_title">Bluetooth Remote Car</h3>
+                        <p class="portfolio-desc" data-i18n="proj7_desc">Bluetooth-controlled remote car using Arduino and HC-05 module, operated via smartphone application.</p>
+                        <div class="portfolio-tech"><span>Arduino</span><span>Bluetooth HC-05</span><span>Motor Driver</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="edu_title">Education History</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card" data-animate="fade-up">
+                <div class="edu-icon"><i class="fas fa-university"></i></div>
+                <div class="edu-info">
+                    <h3 class="edu-degree" data-i18n="edu_degree">Bachelor of Informatics Engineering</h3>
+                    <p class="edu-school">Universitas Adhirajasa Reswara Sanjaya (ARS University)</p>
+                    <p class="edu-location"><i class="fas fa-map-marker-alt"></i> <span
+                            data-i18n="about_location_value">Bandung, West Java</span></p>
+                </div>
+                <div class="edu-badge">
+                    <i class="fas fa-award"></i>
+                    <span data-i18n="edu_badge">Bachelor</span>
+                </div>
+            </div>
+            <div class="education-card" data-animate="fade-up" data-delay="100" style="margin-top: 24px;">
+                <div class="edu-icon" style="background: linear-gradient(135deg, #00b894, #00cec9);">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="edu-info">
+                    <h3 class="edu-degree" data-i18n="cert_title">Complete Mobile Engineer Career with Flutter</h3>
+                    <p class="edu-school">Alterra Academy — Kampus Merdeka</p>
+                    <p class="edu-location"><i class="fas fa-calendar-alt"></i> 2023</p>
+                </div>
+                <div class="edu-badge" style="background: rgba(0, 184, 148, 0.1);">
+                    <i class="fas fa-certificate" style="color: #00b894;"></i>
+                    <span data-i18n="cert_badge" style="color: #00b894;">Bootcamp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-animate="fade-right">
+                    <h3 class="contact-subtitle" data-i18n="contact_subtitle">Don't hesitate to reach out</h3>
+                    <p class="contact-text" data-i18n="contact_text">
+                        I'm always open to new opportunities, collaborations, or just discussing about technology. Feel
+                        free to contact me!
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label" data-i18n="contact_phone">Phone</span>
+                                <a href="tel:+6283842707945" class="contact-card-value">+62 838 4270 7945</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Email</span>
+                                <a href="mailto:saepulrohman3445@gmail.com"
+                                    class="contact-card-value">saepulrohman3445@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label" data-i18n="about_location_label">Location</span>
+                                <span class="contact-card-value" data-i18n="contact_location_value">Bandung, West Java,
+                                    Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:saepulrohman3445@gmail.com" class="social-link" title="Email"
+                            aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/6283842707945" class="social-link" title="WhatsApp" aria-label="WhatsApp"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/saeplll/" class="social-link" title="LinkedIn"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/rhmnsae" class="social-link" title="GitHub" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="form_name">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" required data-i18n-placeholder="form_name_ph"
+                                    placeholder="Enter your name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required
+                                    data-i18n-placeholder="form_email_ph" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label" data-i18n="form_subject">Subject</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" required
+                                    data-i18n-placeholder="form_subject_ph" placeholder="Message subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="form_message">Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" rows="5" required
+                                    data-i18n-placeholder="form_message_ph"
+                                    placeholder="Write your message..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span data-i18n="form_send">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p class="footer-desc" data-i18n="footer_desc">IT Support Enthusiast | Hardware, Software &amp;
+                        Network Troubleshooting</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="nav_about">About</a></li>
+                        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-info">
+                    <h4 data-i18n="nav_contact">Contact</h4>
+                    <p><i class="fas fa-envelope"></i> saepulrohman3445@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +62 838 4270 7945</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saepul Rohman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-overlay" onclick="closeGallery()"></div>
+        <button class="gallery-close" onclick="closeGallery()"><i class="fas fa-times"></i></button>
+        <button class="gallery-nav gallery-prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <div class="gallery-content">
+            <img id="galleryImage" src="" alt="Gallery Image" class="gallery-img">
+            <div class="gallery-caption" id="galleryCaption"></div>
+            <div class="gallery-counter" id="galleryCounter"></div>
+        </div>
+        <button class="gallery-nav gallery-next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
