@@ -293,7 +293,10 @@ function setLanguage(lang) {
     });
 
     // Restart typing effect with new language titles
-    resetTyping();
+    // Check if it exists first (prevents crash on initial load when restoring language)
+    if (typeof window.resetTyping === 'function') {
+        window.resetTyping();
+    }
 
     // Save preference
     localStorage.setItem('portfolio-lang', lang);
