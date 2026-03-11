@@ -304,20 +304,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ===== Preloader =====
     const preloader = document.getElementById('preloader');
+
+    function hidePreloaderAndInit() {
+        preloader.classList.add('hidden');
+        document.body.classList.remove('no-scroll');
+        initAnimations();
+    }
+
     window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-            document.body.classList.remove('no-scroll');
-            initAnimations();
-        }, 800);
+        setTimeout(hidePreloaderAndInit, 800);
     });
 
-    // Fallback
+    // Handle BFCache restores (browser Back/Forward navigation)
+    // pageshow fires even when page is restored from cache, load does NOT
+    window.addEventListener('pageshow', (e) => {
+        if (e.persisted) {
+            // Page was restored from BFCache
+            hidePreloaderAndInit();
+        }
+    });
+
+    // Fallback: ensure preloader always hides
     setTimeout(() => {
         if (!preloader.classList.contains('hidden')) {
-            preloader.classList.add('hidden');
-            document.body.classList.remove('no-scroll');
-            initAnimations();
+            hidePreloaderAndInit();
         }
     }, 3000);
 
@@ -486,6 +496,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const particlesContainer = document.getElementById('particles');
 
     function createParticles() {
+        // Clear existing particles to prevent duplication on re-init
+        while (particlesContainer.firstChild) {
+            particlesContainer.removeChild(particlesContainer.firstChild);
+        }
+
         const particleCount = window.innerWidth < 768 ? 30 : 60;
 
         for (let i = 0; i < particleCount; i++) {
@@ -523,6 +538,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ===== Scroll Animations =====
     function initAnimations() {
+        // Remove 'animated' class from elements to re-trigger animations
+        // This ensures animations play correctly on BFCache restores
+        document.querySelectorAll('[data-animate].animated').forEach(el => {
+            el.classList.remove('animated');
+        });
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -541,6 +562,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-animate]').forEach(el => {
             observer.observe(el);
         });
+
+        // Re-run counter and skill bar animations (needed for BFCache restores)
+        animateCounters();
+        animateSkillBars();
     }
 
     // ===== Counter Animation =====
@@ -584,11 +609,14 @@ document.addEventListener('DOMContentLoaded', () => {
         counters.forEach(counter => counterObserver.observe(counter));
     }
 
-    animateCounters();
-
     // ===== Skill Progress Bars =====
     function animateSkillBars() {
         const skillBars = document.querySelectorAll('.skill-progress');
+
+        // Reset bars first so they re-animate on BFCache restore
+        skillBars.forEach(bar => {
+            bar.style.width = '0%';
+        });
 
         const skillObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -602,8 +630,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         skillBars.forEach(bar => skillObserver.observe(bar));
     }
-
-    animateSkillBars();
 
     // ===== Portfolio Filter =====
     const filterBtns = document.querySelectorAll('.filter-btn');
