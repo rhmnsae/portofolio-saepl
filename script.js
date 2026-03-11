@@ -299,6 +299,37 @@ function setLanguage(lang) {
     localStorage.setItem('portfolio-lang', lang);
 }
 
+// ===== Auto-Reset: Force reload if page is stale (tab was inactive for too long) =====
+// This prevents "broken functions" after the page sits idle for a long time
+(function () {
+    const STALE_THRESHOLD_MS = 30 * 60 * 1000; // 30 minutes
+    let lastActiveTime = Date.now();
+
+    // Track when user is active on this tab
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            const now = Date.now();
+            const elapsed = now - lastActiveTime;
+
+            // If tab was hidden for more than 30 minutes, force a full hard reload
+            if (elapsed > STALE_THRESHOLD_MS) {
+                window.location.reload(true); // hard reload bypasses cache
+                return;
+            }
+        } else {
+            // Tab became hidden → record the time
+            lastActiveTime = Date.now();
+        }
+    });
+
+    // Also force reload on BFCache restore (browser back/forward)
+    window.addEventListener('pageshow', (e) => {
+        if (e.persisted) {
+            window.location.reload(true);
+        }
+    });
+})();
+
 // ===== Main App =====
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -313,15 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('load', () => {
         setTimeout(hidePreloaderAndInit, 800);
-    });
-
-    // Handle BFCache restores (browser Back/Forward navigation)
-    // pageshow fires even when page is restored from cache, load does NOT
-    window.addEventListener('pageshow', (e) => {
-        if (e.persisted) {
-            // Page was restored from BFCache
-            hidePreloaderAndInit();
-        }
     });
 
     // Fallback: ensure preloader always hides
