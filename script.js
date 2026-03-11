@@ -299,33 +299,26 @@ function setLanguage(lang) {
     localStorage.setItem('portfolio-lang', lang);
 }
 
-// ===== Auto-Reset: Force reload if page is stale (tab was inactive for too long) =====
-// This prevents "broken functions" after the page sits idle for a long time
+// ===== Auto-Reset: Force reload if page is stale (tab inactive 30+ min) =====
 (function () {
     const STALE_THRESHOLD_MS = 30 * 60 * 1000; // 30 minutes
     let lastActiveTime = Date.now();
 
-    // Track when user is active on this tab
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') {
-            const now = Date.now();
-            const elapsed = now - lastActiveTime;
-
-            // If tab was hidden for more than 30 minutes, force a full hard reload
+            const elapsed = Date.now() - lastActiveTime;
             if (elapsed > STALE_THRESHOLD_MS) {
-                window.location.reload(true); // hard reload bypasses cache
-                return;
+                // Guard: only reload once to prevent loop
+                const key = 'portfolio-stale-reload';
+                if (!sessionStorage.getItem(key)) {
+                    sessionStorage.setItem(key, '1');
+                    window.location.reload();
+                } else {
+                    sessionStorage.removeItem(key);
+                }
             }
         } else {
-            // Tab became hidden → record the time
             lastActiveTime = Date.now();
-        }
-    });
-
-    // Also force reload on BFCache restore (browser back/forward)
-    window.addEventListener('pageshow', (e) => {
-        if (e.persisted) {
-            window.location.reload(true);
         }
     });
 })();
@@ -464,12 +457,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let charIndex = 0;
     let isDeleting = false;
     let typingTimeout = null;
+    let typingGeneration = 0; // Incremented on each reset to kill old instances
 
     function getTitles() {
         return translations[currentLang].typing_titles;
     }
 
-    function typeEffect() {
+    function typeEffect(generation) {
+        // If a newer resetTyping() was called, this instance is stale — stop
+        if (generation !== typingGeneration) return;
+
         const titles = getTitles();
         const currentTitle = titles[titleIndex % titles.length];
         let speed;
@@ -477,7 +474,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isDeleting) {
             typingText.textContent = currentTitle.substring(0, charIndex + 1);
             charIndex++;
-
             if (charIndex === currentTitle.length) {
                 isDeleting = true;
                 speed = 2000;
@@ -487,7 +483,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             typingText.textContent = currentTitle.substring(0, charIndex - 1);
             charIndex--;
-
             if (charIndex === 0) {
                 isDeleting = false;
                 titleIndex = (titleIndex + 1) % titles.length;
@@ -497,22 +492,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        typingTimeout = setTimeout(typeEffect, speed);
+        typingTimeout = setTimeout(() => typeEffect(generation), speed);
     }
 
     function resetTyping() {
-        if (typingTimeout) clearTimeout(typingTimeout);
+        // Increment generation to invalidate any running typeEffect instances
+        typingGeneration++;
+        if (typingTimeout) {
+            clearTimeout(typingTimeout);
+            typingTimeout = null;
+        }
         titleIndex = 0;
         charIndex = 0;
         isDeleting = false;
         typingText.textContent = '';
-        typeEffect();
+        // Capture current generation before async call
+        const gen = typingGeneration;
+        typeEffect(gen);
     }
 
-    // Make resetTyping accessible globally
+    // Make resetTyping accessible globally for setLanguage()
     window.resetTyping = resetTyping;
 
-    typeEffect();
+    // Start typing (use resetTyping to ensure single instance)
+    resetTyping();
 
     // ===== Particles Background =====
     const particlesContainer = document.getElementById('particles');
