@@ -89,6 +89,9 @@ const translations = {
         proj5_title: 'Data MBG Website',
         proj5_desc: 'Web application for recording data of babies, pregnant women, and breastfeeding mothers who receive MBG (Makanan Bergizi Gratis).',
 
+        proj6_title: 'Anilist Website',
+        proj6_desc: 'Web application to view anime release schedules, featuring data fetched directly from the MyAnimeList API (Jikan API).',
+
         proj7_title: 'Bluetooth Remote Car',
         proj7_desc: 'Bluetooth-controlled remote car using Arduino and HC-05 module, operated via smartphone application.',
 
@@ -212,6 +215,9 @@ const translations = {
         proj4_desc: 'Website AI untuk menganalisis sentimen media sosial Twitter menggunakan model machine learning.',
         proj5_title: 'Website Data MBG',
         proj5_desc: 'Aplikasi web untuk mendata bayi, ibu hamil, dan ibu menyusui yang mendapat MBG (Makanan Bergizi Gratis).',
+
+        proj6_title: 'Website Anilist',
+        proj6_desc: 'Aplikasi web untuk melihat jadwal rilis anime, mengambil data langsung dari API MyAnimeList (Jikan API).',
 
         proj7_title: 'Mobil Remote Bluetooth',
         proj7_desc: 'Mobil remote yang dikendalikan melalui Bluetooth menggunakan Arduino dan modul HC-05, dioperasikan via aplikasi smartphone.',

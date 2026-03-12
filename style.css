@@ -1997,15 +1997,6 @@ body.no-scroll .back-to-top {
         position: relative;
     }
 
-    /* Hubungi Kami Button distinct styling (optional but mostly reference only has distinct text) */
-    .sidebar-nav-list li:last-child .nav-link {
-        background: var(--gradient-primary);
-        color: white;
-        border-radius: 12px;
-        padding: 16px 0;
-        margin-top: 30px;
-        border: none;
-    }
 
     .sidebar-nav-list li:last-child {
         border-bottom: none;
