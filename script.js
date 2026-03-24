@@ -95,6 +95,12 @@ const translations = {
         proj7_title: 'Bluetooth Remote Car',
         proj7_desc: 'Bluetooth-controlled remote car using Arduino and HC-05 module, operated via smartphone application.',
 
+        proj8_title: 'X/Twitter Scraper',
+        proj8_desc: 'Web-based tool to generate X/Twitter data crawling code that can be run on Google Colab, with export feature to CSV based on keywords or profiles.',
+
+        proj9_title: 'Sentimeter: Sentiment Analysis',
+        proj9_desc: 'Free sentiment analysis tool for X/Twitter with interactive and easy-to-understand data visualization.',
+
         // Education
         edu_tag: 'Education',
         edu_title: 'Education History',
@@ -222,6 +228,12 @@ const translations = {
         proj7_title: 'Mobil Remote Bluetooth',
         proj7_desc: 'Mobil remote yang dikendalikan melalui Bluetooth menggunakan Arduino dan modul HC-05, dioperasikan via aplikasi smartphone.',
 
+        proj8_title: 'X/Twitter Scraper',
+        proj8_desc: 'Alat berbasis web untuk menghasilkan kode crawling data X/Twitter yang dapat dijalankan di Google Colab, dengan fitur ekspor tweet berdasarkan keyword atau profil ke format CSV.',
+
+        proj9_title: 'Sentimeter: Analisis Sentimen',
+        proj9_desc: 'Alat analisis sentimen gratis untuk X/Twitter dengan visualisasi data yang interaktif dan mudah dipahami.',
+
         // Education
         edu_tag: 'Pendidikan',
         edu_title: 'Riwayat Pendidikan',
@@ -335,6 +347,12 @@ function setLanguage(lang) {
 // ===== Main App =====
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ===== Theme Init =====
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'light' || (!savedTheme && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+        document.body.classList.add('light-mode');
+    }
+
     // ===== Preloader =====
     const preloader = document.getElementById('preloader');
 
@@ -354,6 +372,16 @@ document.addEventListener('DOMContentLoaded', () => {
             hidePreloaderAndInit();
         }
     }, 3000);
+
+    // ===== Theme Switcher =====
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+        });
+    }
 
     // ===== Language Switcher =====
     const langBtns = document.querySelectorAll('.lang-btn');
@@ -825,19 +853,42 @@ function changeSlide(direction) {
     updateGallery();
 }
 
+let galleryTimeout;
+let galleryRequestId = 0;
+
 function updateGallery() {
     const img = document.getElementById('galleryImage');
     const caption = document.getElementById('galleryCaption');
     const counter = document.getElementById('galleryCounter');
 
+    clearTimeout(galleryTimeout);
+    const requestId = ++galleryRequestId;
+
+    // Fade out completely
     img.style.opacity = '0';
-    setTimeout(() => {
-        img.src = galleryImages[currentSlide].src;
-        img.alt = galleryImages[currentSlide].caption;
-        caption.textContent = galleryImages[currentSlide].caption;
-        counter.textContent = `${currentSlide + 1} / ${galleryImages.length}`;
-        img.style.opacity = '1';
-    }, 150);
+    
+    // Wait for CSS transition (0.3s) to finish so no shadow remains
+    galleryTimeout = setTimeout(() => {
+        if (galleryRequestId !== requestId) return;
+
+        const nextSrc = galleryImages[currentSlide].src;
+        
+        const tempImg = new Image();
+        tempImg.onload = () => {
+            if (galleryRequestId !== requestId) return;
+            
+            img.src = nextSrc;
+            img.alt = galleryImages[currentSlide].caption;
+            caption.textContent = galleryImages[currentSlide].caption;
+            counter.textContent = `${currentSlide + 1} / ${galleryImages.length}`;
+            
+            // Render before fading in
+            requestAnimationFrame(() => {
+                img.style.opacity = '1';
+            });
+        };
+        tempImg.src = nextSrc;
+    }, 300);
 }
 
 // Keyboard navigation
