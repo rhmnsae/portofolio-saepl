@@ -13,6 +13,7 @@
     <meta name="keywords" content="Saepul Rohman, Portfolio, IT Support, Web Developer, Bandung">
     <meta name="author" content="Saepul Rohman">
     <title>Saepul Rohman | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -130,7 +131,7 @@
                         <span class="stat-label" data-i18n="hero_stat_company">Companies</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-number" data-count="15">0</span>
                         <span class="stat-suffix">+</span>
                         <span class="stat-label" data-i18n="hero_stat_projects">Projects Done</span>
                     </div>
@@ -139,9 +140,10 @@
             <div class="hero-visual" data-animate="fade-left" data-delay="200">
                 <div class="hero-image-wrapper">
                     <div class="hero-image-border"></div>
-                    <div class="hero-image-container">
-                        <img src="image/foto-saya/me.jpg" alt="Saepul Rohman"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="hero-image-container" id="hero-scratch-container">
+                        <img src="image/foto-saya/me.jpg" alt="Saepul Rohman" class="hero-img-base">
+                        <canvas id="scratch-canvas" class="hero-img-top"></canvas>
+                        <img src="image/foto-saya/spiderman.png" alt="Spider-Man" id="cover-img" style="display:none;" crossorigin="anonymous">
                     </div>
                     <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
                     <div class="floating-badge badge-2"><i class="fas fa-server"></i></div>
@@ -573,6 +575,7 @@
             <div class="portfolio-filters" data-animate="fade-up">
                 <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
                 <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="landing">Landing Page</button>
                 <button class="filter-btn" data-filter="mobile">Mobile App</button>
                 <button class="filter-btn" data-filter="iot">IoT</button>
                 <button class="filter-btn" data-filter="ai">AI / ML</button>
@@ -600,7 +603,7 @@
                 </div>
                 <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
                     <div class="portfolio-image">
-                        <img src="image/oprek-website.png" alt="oprekHP Website" class="portfolio-img">
+                        <img src="image/oprek-website/1.png" alt="oprekHP Website" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <div class="portfolio-actions">
                                 <a href="https://oprekhp.ct.ws/" target="_blank" rel="noopener noreferrer"
@@ -660,11 +663,11 @@
                 </div>
                 <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
                     <div class="portfolio-image">
-                        <img src="image/data-mbg-website.png" alt="Data MBG Website" class="portfolio-img">
+                        <img src="image/data-mbg-website/1.png" alt="Data MBG Website" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <div class="portfolio-actions">
-                                <a href="https://rhmnsae.github.io/website-rt03/" target="_blank"
-                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Site"><i
+                                <a href="https://rw016manggahang.rf.gd/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -682,11 +685,11 @@
 
                 <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="200">
                     <div class="portfolio-image">
-                        <img src="image/web-anilist.png" alt="Anilist Website" class="portfolio-img">
+                        <img src="image/web-anilist/1.png" alt="Anilist Website" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <div class="portfolio-actions">
-                                <a href="https://anilist.gamer.gd/" target="_blank"
-                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Site"><i
+                                <a href="https://anilist.gamer.gd/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -694,7 +697,8 @@
                     <div class="portfolio-info">
                         <span class="portfolio-category-tag">Web Development</span>
                         <h3 class="portfolio-title" data-i18n="proj6_title">Anilist Website</h3>
-                        <p class="portfolio-desc" data-i18n="proj6_desc">Web application to view anime release schedules, featuring data fetched directly from the MyAnimeList API (Jikan API).</p>
+                        <p class="portfolio-desc" data-i18n="proj6_desc">Web application to view anime release
+                            schedules, featuring data fetched directly from the MyAnimeList API (Jikan API).</p>
                         <div class="portfolio-tech">
                             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
                         </div>
@@ -724,11 +728,11 @@
 
                 <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
                     <div class="portfolio-image">
-                        <img src="image/xscraper.png" alt="X/Twitter Scraper" class="portfolio-img">
+                        <img src="image/xscraper/1.png" alt="X/Twitter Scraper" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <div class="portfolio-actions">
-                                <a href="https://xscraper.fwh.is/" target="_blank"
-                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Site"><i
+                                <a href="https://xscraper.fwh.is/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -736,7 +740,9 @@
                     <div class="portfolio-info">
                         <span class="portfolio-category-tag">Web Development</span>
                         <h3 class="portfolio-title" data-i18n="proj8_title">X/Twitter Scraper</h3>
-                        <p class="portfolio-desc" data-i18n="proj8_desc">Web-based tool to generate X/Twitter data crawling code that can be run on Google Colab, with export feature to CSV based on keywords or profiles.</p>
+                        <p class="portfolio-desc" data-i18n="proj8_desc">Web-based tool to generate X/Twitter data
+                            crawling code that can be run on Google Colab, with export feature to CSV based on keywords
+                            or profiles.</p>
                         <div class="portfolio-tech">
                             <span>Python</span><span>Google Colab</span><span>Data Crawling</span>
                         </div>
@@ -745,11 +751,11 @@
 
                 <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="200">
                     <div class="portfolio-image">
-                        <img src="image/sentimeter.png" alt="Sentimeter" class="portfolio-img">
+                        <img src="image/sentimeter/1.png" alt="Sentimeter" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <div class="portfolio-actions">
-                                <a href="https://rhmnsae-sentimeter.hf.space/" target="_blank"
-                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Site"><i
+                                <a href="https://rhmnsae-sentimeter.hf.space/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -757,10 +763,487 @@
                     <div class="portfolio-info">
                         <span class="portfolio-category-tag">Web Development</span>
                         <h3 class="portfolio-title" data-i18n="proj9_title">Sentimeter: Sentiment Analysis</h3>
-                        <p class="portfolio-desc" data-i18n="proj9_desc">Free sentiment analysis tool for X/Twitter with interactive and easy-to-understand data visualization.</p>
+                        <p class="portfolio-desc" data-i18n="proj9_desc">Free sentiment analysis tool for X/Twitter with
+                            interactive and easy-to-understand data visualization.</p>
                         <div class="portfolio-tech">
                             <span>Web App</span><span>Sentiment Analysis</span><span>Data Visualization</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/dzikir/Screenshot_20260416-140922_Dzikir Pagi & Petang.png" alt="Dzikir App"
+                            class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryDzikir()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj10_title">Dzikir App</h3>
+                        <p class="portfolio-desc" data-i18n="proj10_desc">Mobile application for morning and evening
+                            dhikr, helping users to maintain their daily spiritual routine.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/pinjam-barang/Screenshot_20260416-140735_pinjambarangtetangga_app.png"
+                            alt="Borrowing Goods App" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryPinjam()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj11_title">Borrowing Goods App</h3>
+                        <p class="portfolio-desc" data-i18n="proj11_desc">Neighborhood-based platform to facilitate
+                            borrowing and lending household items between neighbors.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/teman-olahraga/Screenshot_20260416-141018_temanolahraga_app.png"
+                            alt="Sports Partner App" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGallerySports()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj12_title">Sports Partner App</h3>
+                        <p class="portfolio-desc" data-i18n="proj12_desc">Social mobile application to find workout
+                            buddies and join local sports communities easily.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>Maps API</span></div>
+                    </div>
+                </div>
+
+                                <!-- Landing Page Template 1 - B2B / KORPORAT -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/1.png" alt="B2B / KORPORAT" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_9d2dcac710c8/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">B2B / KORPORAT</h3>
+                        <p class="portfolio-desc">Landing page profesional untuk perusahaan dan bisnis B2B. Tampilan tegas, kepercayaan merek tinggi.</p>
+                        <div class="portfolio-tech"><span>B2B</span><span>Corporate</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 2 - F&B / KULINER -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/2.png" alt="F&B / KULINER" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_a529b32d1385/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">F&B / KULINER</h3>
+                        <p class="portfolio-desc">Landing page restoran atau kedai makanan. Tampilkan menu, dan sistem reservasi meja.</p>
+                        <div class="portfolio-tech"><span>F&B</span><span>Culinary</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 3 - RITEL / FASHION -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/3.png" alt="RITEL / FASHION" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_2b2adee682fe/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">RITEL / FASHION</h3>
+                        <p class="portfolio-desc">Landing page toko fashion minimalis editorial.</p>
+                        <div class="portfolio-tech"><span>Retail</span><span>Fashion</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 4 - KONSULTAN / FREELANCE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/4.png" alt="KONSULTAN / FREELANCE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_e9449e5f3d3a/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">KONSULTAN / FREELANCE</h3>
+                        <p class="portfolio-desc">Landing page personal brand untuk freelancer & konsultan. Portofolio, keahlian, dan form kontak.</p>
+                        <div class="portfolio-tech"><span>Consultant</span><span>Freelance</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 5 - ACARA / FESTIVAL -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/5.png" alt="ACARA / FESTIVAL" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_5131d7c0159d/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">ACARA / FESTIVAL</h3>
+                        <p class="portfolio-desc">Landing page acara & festival dengan countdown timer, penjualan tiket, dan lineup artis/pembicara.</p>
+                        <div class="portfolio-tech"><span>Event</span><span>Festival</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 6 - KLINIK / KESEHATAN -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/6.png" alt="KLINIK / KESEHATAN" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_36104324d66e/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">KLINIK / KESEHATAN</h3>
+                        <p class="portfolio-desc">Landing page klinik & layanan medis. Profil dokter, jadwal praktik, dan sistem reservasi pasien online.</p>
+                        <div class="portfolio-tech"><span>Clinic</span><span>Health</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 7 - PROPERTI / REAL ESTATE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/7.png" alt="PROPERTI / REAL ESTATE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_0416b475d532/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PROPERTI / REAL ESTATE</h3>
+                        <p class="portfolio-desc">Landing page properti premium. Listing rumah & apartemen, filter pencarian lokasi, harga, dan tipe hunian.</p>
+                        <div class="portfolio-tech"><span>Property</span><span>Real Estate</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 8 - COWORKING SPACE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/8.png" alt="COWORKING SPACE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_8126f8f39f73/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">COWORKING SPACE</h3>
+                        <p class="portfolio-desc">Landing page ruang kerja bersama. Tipe ruang, paket membership, dan fasilitas profesional untuk freelancer & tim.</p>
+                        <div class="portfolio-tech"><span>Coworking</span><span>Workspace</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 9 - TEKNOLOGI / STARTUP -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/9.png" alt="TEKNOLOGI / STARTUP" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_3067fa6c632b/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">TEKNOLOGI / STARTUP</h3>
+                        <p class="portfolio-desc">Landing page produk SaaS & startup teknologi Dark futuristik.</p>
+                        <div class="portfolio-tech"><span>Technology</span><span>Startup</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 10 - PENDIDIKAN / KURSUS -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/10.png" alt="PENDIDIKAN / KURSUS" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_7175f3f91e02/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PENDIDIKAN / KURSUS</h3>
+                        <p class="portfolio-desc">Landing page platform belajar online. Katalog kursus, dan pendaftaran gratis.</p>
+                        <div class="portfolio-tech"><span>Education</span><span>Course</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 11 - PERTANIAN / AGRITECH -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/11.png" alt="PERTANIAN / AGRITECH" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_c8a9c6df1a89/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PERTANIAN / AGRITECH</h3>
+                        <p class="portfolio-desc">Landing page platform pertanian modern. Teknologi IoT, pasar digital, dan konsultasi agronomi untuk petani.</p>
+                        <div class="portfolio-tech"><span>Agriculture</span><span>Agritech</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 12 - OTOMOTIF / BENGKEL -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/12.png" alt="OTOMOTIF / BENGKEL" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_15204c2b2ce1/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">OTOMOTIF / BENGKEL</h3>
+                        <p class="portfolio-desc">Landing page bengkel & servis kendaraan. Daftar layanan, estimasi biaya, booking online, dan testimoni.</p>
+                        <div class="portfolio-tech"><span>Automotive</span><span>Workshop</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 13 - TRAVEL / PARIWISATA -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/13.png" alt="TRAVEL / PARIWISATA" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_45107c40e4c5/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">TRAVEL / PARIWISATA</h3>
+                        <p class="portfolio-desc">Landing page agen travel & wisata. Paket destinasi, galeri, harga, dan formulir pemesanan perjalanan.</p>
+                        <div class="portfolio-tech"><span>Travel</span><span>Tourism</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 14 - KEUANGAN / FINTECH -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/14.png" alt="KEUANGAN / FINTECH" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_376cafec9c65/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">KEUANGAN / FINTECH</h3>
+                        <p class="portfolio-desc">Landing page aplikasi keuangan & fintech.</p>
+                        <div class="portfolio-tech"><span>Finance</span><span>Fintech</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 15 - BARBERSHOP / SALON -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/15.png" alt="BARBERSHOP / SALON" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_a41b9b29004c/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">BARBERSHOP / SALON</h3>
+                        <p class="portfolio-desc">Landing page barbershop premium. Daftar layanan, profil barber, galeri hasil potongan, dan sistem booking online.</p>
+                        <div class="portfolio-tech"><span>Barbershop</span><span>Salon</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 16 - ARTISAN BAKERY -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/16.png" alt="ARTISAN BAKERY" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_26caf0c07687/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">ARTISAN BAKERY</h3>
+                        <p class="portfolio-desc">Landing page hangat bernuansa cokelat klasik untuk toko roti, kue bolu, atau pastry kekinian.</p>
+                        <div class="portfolio-tech"><span>Bakery</span><span>Pastry</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 17 - DESSERT & GELATO -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/17.png" alt="DESSERT & GELATO" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_c0dd5f0fa755/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">DESSERT & GELATO</h3>
+                        <p class="portfolio-desc">Landing page playful pastel modern untuk dessert cafe, toko gelato, atau modern sweets shop.</p>
+                        <div class="portfolio-tech"><span>Dessert</span><span>Cafe</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 18 - CUSTOM CAKE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/18.png" alt="CUSTOM CAKE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_504c62eeac19/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">CUSTOM CAKE</h3>
+                        <p class="portfolio-desc">Landing page elegan dan minimalis premium untuk pembuat kue pengantin dan custom cake mewah.</p>
+                        <div class="portfolio-tech"><span>Custom Cake</span><span>Bakery</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 19 - PREMIUM SUSHI -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/19.png" alt="PREMIUM SUSHI" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_c8977f126f88/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PREMIUM SUSHI</h3>
+                        <p class="portfolio-desc">Landing page elegan bernuansa deep-dark & gold, untuk restoran sushi autentik atau fine dining.</p>
+                        <div class="portfolio-tech"><span>Sushi</span><span>Restaurant</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 20 - TOKYO RAMEN -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/20.png" alt="TOKYO RAMEN" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_317df3df326d/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">TOKYO RAMEN</h3>
+                        <p class="portfolio-desc">Landing page bold & street-style untuk kedai ramen autentik dengan menu signature bowls.</p>
+                        <div class="portfolio-tech"><span>Ramen</span><span>Restaurant</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 21 - PREMIUM GRILL -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/21.png" alt="PREMIUM GRILL" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_92bd71e54c4c/" target="_blank" rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PREMIUM GRILL</h3>
+                        <p class="portfolio-desc">Landing page berkarakter smoky & rustic, cocok untuk premium steakhouse berkonsep open-fire.</p>
+                        <div class="portfolio-tech"><span>Grill</span><span>Steakhouse</span></div>
+                    </div>
+                </div>
+                <!-- Landingku - Web Development -->
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/landingku/1.png" alt="Landingku" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj13_title">Landingku</h3>
+                        <p class="portfolio-desc" data-i18n="proj13_desc">Landing page creation service website with over 21 diverse and professional templates ready to use.</p>
+                        <div class="portfolio-tech"><span>Web App</span><span>Landing Page</span><span>Business</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/mutatit/1.png" alt="Mutatit" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj14_title">Mutatit - Web Tools</h3>
+                        <p class="portfolio-desc" data-i18n="proj14_desc">Affordable web tools development service providing various digital automation and utility solutions.</p>
+                        <div class="portfolio-tech"><span>Web Tools</span><span>Automation</span><span>SaaS</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/uang-masuk/1.png" alt="Uang Masuk" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://uangmasuk.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj15_title">Uang Masuk - POS Kasir</h3>
+                        <p class="portfolio-desc" data-i18n="proj15_desc">Point of Sale (POS) cashier and complete financial reporting website designed specifically for MSMEs (UMKM).</p>
+                        <div class="portfolio-tech"><span>POS</span><span>Accounting</span><span>UMKM</span></div>
                     </div>
                 </div>
             </div>
@@ -947,6 +1430,8 @@
         <button class="gallery-nav gallery-next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
     </div>
 
+    <script src="scratch.js"></script>
+    <script src="matrix.js"></script>
     <script src="script.js?v=20260311"></script>
 </body>
 

@@ -101,6 +101,24 @@ const translations = {
         proj9_title: 'Sentimeter: Sentiment Analysis',
         proj9_desc: 'Free sentiment analysis tool for X/Twitter with interactive and easy-to-understand data visualization.',
 
+        proj10_title: 'Dzikir App',
+        proj10_desc: 'Mobile application for morning and evening dhikr, helping users to maintain their daily spiritual routine.',
+
+        proj11_title: 'Borrowing Goods App',
+        proj11_desc: 'Neighborhood-based platform to facilitate borrowing and lending household items between neighbors.',
+
+        proj12_title: 'Sports Partner App',
+        proj12_desc: 'Social mobile application to find workout buddies and join local sports communities easily.',
+
+        proj13_title: 'Landingku',
+        proj13_desc: 'Landing page creation service website with over 21 diverse and professional templates ready to use.',
+
+        proj14_title: 'Mutatit - Web Tools',
+        proj14_desc: 'Affordable web tools development service providing various digital automation and utility solutions.',
+
+        proj15_title: 'Uang Masuk - POS Kasir',
+        proj15_desc: 'Point of Sale (POS) cashier and complete financial reporting website designed specifically for MSMEs (UMKM).',
+
         // Education
         edu_tag: 'Education',
         edu_title: 'Education History',
@@ -233,6 +251,24 @@ const translations = {
 
         proj9_title: 'Sentimeter: Analisis Sentimen',
         proj9_desc: 'Alat analisis sentimen gratis untuk X/Twitter dengan visualisasi data yang interaktif dan mudah dipahami.',
+
+        proj10_title: 'Aplikasi Dzikir',
+        proj10_desc: 'Aplikasi mobile untuk dzikir pagi dan petang, membantu pengguna menjaga rutinitas ibadah harian.',
+
+        proj11_title: 'Aplikasi Pinjam Barang',
+        proj11_desc: 'Platform berbasis lingkungan untuk memfasilitasi pinjam-meminjam barang rumah tangga antar tetangga.',
+
+        proj12_title: 'Aplikasi Teman Olahraga',
+        proj12_desc: 'Aplikasi mobile sosial untuk mencari teman berolahraga dan bergabung dengan komunitas olahraga lokal dengan mudah.',
+
+        proj13_title: 'Landingku',
+        proj13_desc: 'Website jasa pembuatan landing page dengan lebih dari 21 pilihan template beragam dan profesional yang siap digunakan.',
+
+        proj14_title: 'Mutatit',
+        proj14_desc: 'Jasa pembuatan website tools murah yang menyediakan berbagai solusi digital untuk otomatisasi dan utilitas.',
+
+        proj15_title: 'Uang Masuk',
+        proj15_desc: 'Website POS kasir dan laporan keuangan lengkap yang murah dan mudah digunakan untuk pelaku UMKM.',
 
         // Education
         edu_tag: 'Pendidikan',
@@ -903,8 +939,8 @@ document.addEventListener('keydown', (e) => {
 
 // IoT Gallery - Tempat Sampah Otomatis
 const galleryIot1 = [
-    { src: 'image/tempat-sampah-otomatis/1.jpeg', caption: 'Tempat Sampah Otomatis - Front View' },
-    { src: 'image/tempat-sampah-otomatis/2.jpeg', caption: 'Tempat Sampah Otomatis - Detail' }
+    { src: 'image/tempat-sampah-otomatis/1.jpeg', caption: 'Tempat Sampah Otomatis' },
+    { src: 'image/tempat-sampah-otomatis/2.jpeg', caption: 'Tempat Sampah Otomatis' }
 ];
 
 function openGalleryIot1() {
@@ -932,32 +968,32 @@ function openGalleryIot2() {
 
 // Update openGallery to use Sentiment Analysis images
 const gallerySentiment = [
-    { src: 'image/analisis-sentiment/1-login.png', caption: 'Login Page' },
-    { src: 'image/analisis-sentiment/2-register.png', caption: 'Register Page' },
-    { src: 'image/analisis-sentiment/3-inputdata.png', caption: 'Input Data' },
-    { src: 'image/analisis-sentiment/4-profilpengguna.png', caption: 'User Profile' },
-    { src: 'image/analisis-sentiment/5-riwayat.png', caption: 'Analysis History' },
-    { src: 'image/analisis-sentiment/6-hasilanalisis-dashboard.png', caption: 'Dashboard' },
-    { src: 'image/analisis-sentiment/8-hasilanalisis-topik&hashtag.png', caption: 'Topics & Hashtags' },
-    { src: 'image/analisis-sentiment/9-hasilanalisis-visualisasi.png', caption: 'Visualization' },
-    { src: 'image/analisis-sentiment/10-hasilanalisis-analisiskata.png', caption: 'Word Analysis' },
-    { src: 'image/analisis-sentiment/11-hasilanalisis-evaluasikebijakan.png', caption: 'Policy Evaluation' }
+    { src: 'image/analisis-sentiment/1-login.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/2-register.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/3-inputdata.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/4-profilpengguna.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/5-riwayat.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/6-hasilanalisis-dashboard.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/8-hasilanalisis-topik&hashtag.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/9-hasilanalisis-visualisasi.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/10-hasilanalisis-analisiskata.png', caption: 'Analisis Sentimen - Twitter' },
+    { src: 'image/analisis-sentiment/11-hasilanalisis-evaluasikebijakan.png', caption: 'Analisis Sentimen - Twitter' }
 ];
 
 // Mobile Gallery - HarsaEdu
 const galleryMobile = [
-    { src: 'image/aplikasi-harsaedu/Login.jpg', caption: 'Login' },
-    { src: 'image/aplikasi-harsaedu/Daftar.jpg', caption: 'Register' },
-    { src: 'image/aplikasi-harsaedu/Home.png', caption: 'Home' },
-    { src: 'image/aplikasi-harsaedu/Menu Kelas.jpg', caption: 'Class Menu' },
-    { src: 'image/aplikasi-harsaedu/List Kategori.jpg', caption: 'Category List' },
-    { src: 'image/aplikasi-harsaedu/List Kategori-Dropdown.jpg', caption: 'Category Dropdown' },
-    { src: 'image/aplikasi-harsaedu/List Paket Berlangganan.jpg', caption: 'Subscription Packages' },
-    { src: 'image/aplikasi-harsaedu/pembayaran.jpg', caption: 'Payment' },
-    { src: 'image/aplikasi-harsaedu/Isi Rekomendasi Kelas.jpg', caption: 'Class Recommendations' },
-    { src: 'image/aplikasi-harsaedu/Notifikasi.jpg', caption: 'Notifications' },
-    { src: 'image/aplikasi-harsaedu/Profile belum berlangganan.jpg', caption: 'Profile (Unsubscribed)' },
-    { src: 'image/aplikasi-harsaedu/Belum Berlangganan.jpg', caption: 'Not Yet Subscribed' }
+    { src: 'image/aplikasi-harsaedu/Login.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Daftar.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Home.png', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Menu Kelas.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/List Kategori.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/List Kategori-Dropdown.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/List Paket Berlangganan.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/pembayaran.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Isi Rekomendasi Kelas.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Notifikasi.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Profile belum berlangganan.jpg', caption: 'Aplikasi HarsaEdu' },
+    { src: 'image/aplikasi-harsaedu/Belum Berlangganan.jpg', caption: 'Aplikasi HarsaEdu' }
 ];
 
 function openGalleryMobile() {
@@ -968,3 +1004,124 @@ function openGalleryMobile() {
     document.getElementById('galleryModal').classList.add('active');
     document.body.style.overflow = 'hidden';
 }
+
+// Mobile Gallery - Dzikir
+const galleryDzikir = [
+    { src: 'image/dzikir/Screenshot_20260416-140922_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140926_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140930_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140933_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140939_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140943_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140947_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140950_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140954_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-140959_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' },
+    { src: 'image/dzikir/Screenshot_20260416-141008_Dzikir Pagi & Petang.png', caption: 'Aplikasi Dzikir' }
+];
+
+function openGalleryDzikir() {
+    galleryImages.length = 0;
+    galleryDzikir.forEach(img => galleryImages.push(img));
+    currentSlide = 0;
+    updateGallery();
+    document.getElementById('galleryModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Mobile Gallery - Pinjam Barang
+const galleryPinjam = [
+    { src: 'image/pinjam-barang/Screenshot_20260416-140735_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140743_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140745_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140748_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140752_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140803_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140806_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140809_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140818_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140821_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140824_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140827_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140830_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140836_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140841_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140859_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140902_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140906_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140911_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' },
+    { src: 'image/pinjam-barang/Screenshot_20260416-140915_pinjambarangtetangga_app.png', caption: 'Aplikasi Pinjam Barang' }
+];
+
+function openGalleryPinjam() {
+    galleryImages.length = 0;
+    galleryPinjam.forEach(img => galleryImages.push(img));
+    currentSlide = 0;
+    updateGallery();
+    document.getElementById('galleryModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Mobile Gallery - Teman Olahraga
+const gallerySports = [
+    { src: 'image/teman-olahraga/Screenshot_20260416-141018_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141022_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141025_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141029_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141033_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141036_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141043_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141046_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141049_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141052_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141055_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141058_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141101_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141105_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141107_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141109_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141114_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141117_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141120_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141123_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141127_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141206_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141211_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141214_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' },
+    { src: 'image/teman-olahraga/Screenshot_20260416-141217_temanolahraga_app.png', caption: 'Aplikasi Teman Olahraga' }
+];
+
+function openGallerySports() {
+    galleryImages.length = 0;
+    gallerySports.forEach(img => galleryImages.push(img));
+    currentSlide = 0;
+    updateGallery();
+    document.getElementById('galleryModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Hero Image Reveal Effect
+const heroContainer = document.querySelector('.hero-image-container');
+if (heroContainer) {
+    heroContainer.addEventListener('mousemove', (e) => {
+        const rect = heroContainer.getBoundingClientRect();
+        const xPx = e.clientX - rect.left;
+        const yPx = e.clientY - rect.top;
+        const xPct = (xPx / rect.width) * 100;
+        const yPct = (yPx / rect.height) * 100;
+        
+        heroContainer.style.setProperty('--reveal-x', `${xPct}%`);
+        heroContainer.style.setProperty('--reveal-y', `${yPct}%`);
+        heroContainer.style.setProperty('--reveal-x-px', `${xPx}px`);
+        heroContainer.style.setProperty('--reveal-y-px', `${yPx}px`);
+    });
+
+    heroContainer.addEventListener('mouseenter', () => {
+        heroContainer.style.setProperty('--reveal-radius', '80px');
+    });
+
+    heroContainer.addEventListener('mouseleave', () => {
+        heroContainer.style.setProperty('--reveal-radius', '0px');
+    });
+}
+
