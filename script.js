@@ -504,6 +504,12 @@ document.addEventListener('DOMContentLoaded', () => {
         sidebarOverlay.addEventListener('click', closeSidebar);
     }
 
+    // Close button inside sidebar
+    const sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
+    if (sidebarCloseBtn) {
+        sidebarCloseBtn.addEventListener('click', closeSidebar);
+    }
+
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             closeSidebar();

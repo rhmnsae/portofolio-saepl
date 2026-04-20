@@ -20,7 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=20260311">
+    <link rel="stylesheet" href="style.css?v=20260420c">
 </head>
 
 <body>
@@ -42,23 +42,92 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-menu" id="navMenu">
+                <!-- Sidebar Header with Profile -->
                 <div class="sidebar-header">
-                    <span class="sidebar-title">MENU</span>
+                    <div class="sidebar-profile">
+                        <div class="sidebar-avatar">
+                            <img src="image/foto-saya/me.jpg" alt="Saepul Rohman">
+                        </div>
+                        <div class="sidebar-profile-info">
+                            <div class="sidebar-name">Saepul Rohman</div>
+                            <div class="sidebar-role">IT Support & Web Dev</div>
+                            <div class="sidebar-status-badge">
+                                <span class="status-dot"></span>
+                                <span>Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Sidebar Divider -->
+                <div class="sidebar-divider">
+                    <span>Navigation</span>
+                </div>
+
+                <!-- Nav List -->
                 <ul class="sidebar-nav-list">
-                    <li><a href="#hero" class="nav-link active" data-section="hero"><span
-                                data-i18n="nav_home">Home</span></a></li>
-                    <li><a href="#about" class="nav-link" data-section="about"><span
-                                data-i18n="nav_about">About</span></a></li>
-                    <li><a href="#experience" class="nav-link" data-section="experience"><span
-                                data-i18n="nav_experience">Experience</span></a></li>
-                    <li><a href="#skills" class="nav-link" data-section="skills"><span
-                                data-i18n="nav_skills">Skills</span></a></li>
-                    <li><a href="#portfolio" class="nav-link" data-section="portfolio"><span
-                                data-i18n="nav_portfolio">Portfolio</span></a></li>
-                    <li><a href="#contact" class="nav-link" data-section="contact"><span
-                                data-i18n="nav_contact">Contact</span></a></li>
+                    <li>
+                        <a href="#hero" class="nav-link active" data-section="hero">
+                            <span class="nav-link-icon"><i class="fas fa-home"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_home">Home</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link" data-section="about">
+                            <span class="nav-link-icon"><i class="fas fa-user"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_about">About</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="nav-link" data-section="experience">
+                            <span class="nav-link-icon"><i class="fas fa-briefcase"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_experience">Experience</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link" data-section="skills">
+                            <span class="nav-link-icon"><i class="fas fa-code"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_skills">Skills</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <span class="nav-link-icon"><i class="fas fa-th-large"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_portfolio">Portfolio</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link" data-section="contact">
+                            <span class="nav-link-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_contact">Contact</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
                 </ul>
+
+                <!-- Sidebar Footer -->
+                <div class="sidebar-footer">
+                    <div class="sidebar-footer-label">Connect with me</div>
+                    <div class="sidebar-social-links">
+                        <a href="https://github.com/rhmnsae" target="_blank" rel="noopener noreferrer" class="sidebar-social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saeplll/" target="_blank" rel="noopener noreferrer" class="sidebar-social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/6283842707945" target="_blank" rel="noopener noreferrer" class="sidebar-social-btn" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:saepulrohman3445@gmail.com" class="sidebar-social-btn" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="nav-right">
                 <!-- Theme Toggle -->
