@@ -129,6 +129,11 @@ const translations = {
         edu_badge: 'Bachelor',
         cert_title: 'Complete Mobile Engineer Career with Flutter',
         cert_badge: 'Bootcamp',
+        exp6_title: 'Complete Mobile Engineer Career with Flutter Mentee',
+        exp6_company: 'Alterra Academy',
+        exp6_task1: 'Learned the fundamentals of mobile programming using the Flutter framework and Dart programming language.',
+        exp6_task2: 'Implemented state management and API integration in mobile application development.',
+        exp6_task3: 'Built responsive and interactive user interfaces (UI) according to the provided designs.',
 
         // Contact
         contact_tag: 'Contact',
@@ -283,6 +288,11 @@ const translations = {
         edu_badge: 'Sarjana',
         cert_title: 'Complete Mobile Engineer Career with Flutter',
         cert_badge: 'Bootcamp',
+        exp6_title: 'Complete Mobile Engineer Career with Flutter Mentee',
+        exp6_company: 'Alterra Academy',
+        exp6_task1: 'Mempelajari dasar-dasar pemrograman mobile menggunakan framework Flutter dan bahasa pemrograman Dart.',
+        exp6_task2: 'Mengimplementasikan state management dan integrasi API dalam pengembangan aplikasi mobile.',
+        exp6_task3: 'Membangun antarmuka pengguna (UI) yang responsif dan interaktif sesuai dengan desain yang diberikan.',
 
         // Contact
         contact_tag: 'Kontak',
