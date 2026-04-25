@@ -253,6 +253,15 @@ body.no-scroll .navbar {
     width: 100%;
     max-width: 100%;
     border-radius: 0;
+
+    /* Make layout transition instant on open */
+    transition: 
+        background 0.3s, 
+        backdrop-filter 0.3s,
+        -webkit-backdrop-filter 0.3s,
+        border 0.3s,
+        box-shadow 0.3s,
+        width 0s, max-width 0s, top 0s, left 0s, transform 0s, border-radius 0s !important;
 }
 
 /* Make the hamburger lines bright white when sidebar is open */
@@ -2381,6 +2390,19 @@ body.no-scroll .back-to-top {
         width: 96%;
         top: 12px;
         border-radius: 50px;
+        /* Delay layout transitions when closing so the menu can fade out smoothly first */
+        transition: 
+            background 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+            backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+            -webkit-backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+            box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+            border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+            width 0s 0.35s, 
+            max-width 0s 0.35s, 
+            top 0s 0.35s, 
+            left 0s 0.35s, 
+            transform 0s 0.35s, 
+            border-radius 0s 0.35s;
     }
     
     .navbar.scrolled {
