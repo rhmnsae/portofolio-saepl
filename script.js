@@ -432,6 +432,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.toggle('light-mode');
             const isLight = document.body.classList.contains('light-mode');
             localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+            // Recreate particles to match theme style
+            if (typeof createParticles === 'function') createParticles();
         });
     }
 
@@ -621,21 +623,47 @@ document.addEventListener('DOMContentLoaded', () => {
             particlesContainer.removeChild(particlesContainer.firstChild);
         }
 
-        const particleCount = window.innerWidth < 768 ? 30 : 60;
+        const isLight = document.body.classList.contains('light-mode');
+        const particleCount = window.innerWidth < 768 ? 20 : 45;
 
         for (let i = 0; i < particleCount; i++) {
             const particle = document.createElement('div');
-            particle.style.cssText = `
-                position: absolute;
-                width: ${Math.random() * 3 + 1}px;
-                height: ${Math.random() * 3 + 1}px;
-                background: ${Math.random() > 0.5 ? 'rgba(99, 102, 241, 0.3)' : 'rgba(6, 182, 212, 0.3)'};
-                border-radius: 50%;
-                left: ${Math.random() * 100}%;
-                top: ${Math.random() * 100}%;
-                animation: particleFloat ${Math.random() * 8 + 4}s ease-in-out infinite;
-                animation-delay: ${Math.random() * 4}s;
-            `;
+            const size = Math.random() * 3 + 1;
+
+            if (isLight) {
+                // Neo-brutalism: small squares with retro colors
+                const colors = [
+                    'rgba(61, 90, 254, 0.15)',   // retro blue
+                    'rgba(255, 109, 0, 0.12)',    // retro orange
+                    'rgba(26, 26, 46, 0.08)',     // dark navy
+                    'rgba(0, 137, 123, 0.1)'      // retro teal
+                ];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${size + 2}px;
+                    height: ${size + 2}px;
+                    background: ${color};
+                    border: 1px solid rgba(26,26,46,0.06);
+                    border-radius: 2px;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                    animation: particleFloat ${Math.random() * 10 + 6}s ease-in-out infinite;
+                    animation-delay: ${Math.random() * 4}s;
+                `;
+            } else {
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background: ${Math.random() > 0.5 ? 'rgba(99, 102, 241, 0.3)' : 'rgba(6, 182, 212, 0.3)'};
+                    border-radius: 50%;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                    animation: particleFloat ${Math.random() * 8 + 4}s ease-in-out infinite;
+                    animation-delay: ${Math.random() * 4}s;
+                `;
+            }
             particlesContainer.appendChild(particle);
         }
 

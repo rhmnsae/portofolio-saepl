@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function draw() {
         const isLightMode = document.body.classList.contains('light-mode');
         
-        // Semi-transparent rect for trail effect (depends on theme)
+    // Semi-transparent rect for trail effect (depends on theme)
         if (isLightMode) {
-            ctx.fillStyle = "rgba(241, 245, 249, 0.1)"; // var(--bg-primary) in light mode
+            ctx.fillStyle = "rgba(255, 248, 240, 0.06)"; // cream bg - slow fade for visibility
         } else {
             ctx.fillStyle = "rgba(10, 10, 26, 0.1)"; // var(--bg-primary) in dark mode
         }
@@ -50,9 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < drops.length; i++) {
             const text = charSet[Math.floor(Math.random() * charSet.length)];
 
-            // Subtle color matching primary variables (indigo/cyan)
+            // Neo-brutalism retro colors for light mode
             if (isLightMode) {
-                ctx.fillStyle = Math.random() > 0.8 ? "rgba(6, 182, 212, 0.4)" : "rgba(99, 102, 241, 0.3)";
+                const rnd = Math.random();
+                if (rnd > 0.85) {
+                    ctx.fillStyle = "rgba(255, 109, 0, 0.55)"; // retro orange - bold
+                } else if (rnd > 0.7) {
+                    ctx.fillStyle = "rgba(61, 90, 254, 0.45)"; // retro blue - bold
+                } else {
+                    ctx.fillStyle = "rgba(26, 26, 46, 0.25)"; // dark navy - visible
+                }
             } else {
                 ctx.fillStyle = Math.random() > 0.8 ? "rgba(6, 182, 212, 0.5)" : "rgba(99, 102, 241, 0.3)";
             }
