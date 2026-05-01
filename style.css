@@ -404,9 +404,9 @@ body.no-scroll .hamburger-line {
 
 /* Theme toggle - dark mode (default) */
 .theme-toggle {
-    width: 40px;
-    min-width: 40px;
-    border-radius: 10px;
+    width: 38px;
+    min-width: 38px;
+    border-radius: 50%;
     padding: 0;
     color: var(--text-primary);
 }
@@ -448,6 +448,7 @@ body.light-mode .lang-switcher {
     border: 2px solid #1A1A2E;
     box-shadow: 2px 2px 0px #1A1A2E;
     transition: all 0.15s ease;
+    border-radius: 10px;
 }
 
 .lang-switcher:hover {
@@ -465,7 +466,7 @@ body.light-mode .lang-switcher:hover {
 .lang-switcher {
     gap: 2px;
     padding: 0 4px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 .lang-btn {
@@ -477,7 +478,7 @@ body.light-mode .lang-switcher:hover {
     font-weight: 700;
     cursor: pointer;
     padding: 0 14px;
-    border-radius: 8px;
+    border-radius: 100px;
     transition: all 0.2s ease;
     letter-spacing: 0.5px;
     height: 30px;
@@ -493,6 +494,7 @@ body.light-mode .lang-switcher:hover {
 
 body.light-mode .lang-btn {
     color: #64748b;
+    border-radius: 8px;
 }
 
 body.light-mode .lang-btn:hover {
@@ -506,9 +508,9 @@ body.light-mode .lang-btn:hover {
 }
 
 .lang-divider {
-    color: var(--border);
+    color: var(--text-muted);
     font-size: 0.85rem;
-    opacity: 0.6;
+    opacity: 0.4;
     margin: 0 2px;
 }
 
@@ -1655,6 +1657,28 @@ body.light-mode .portfolio-overlay {
     font-size: 0.75rem;
 }
 
+.edu-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.edu-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.edu-meta-item i {
+    width: 18px;
+    text-align: center;
+    color: var(--primary-light);
+    font-size: 0.85rem;
+}
+
 .edu-badge {
     display: flex;
     flex-direction: column;
@@ -2493,6 +2517,10 @@ body.no-scroll .back-to-top {
         text-align: center;
     }
 
+    .edu-meta {
+        align-items: center;
+    }
+
     .timeline { padding-left: 30px; }
     .timeline::before { left: 10px; }
     .timeline-marker { left: -30px; }
@@ -3063,6 +3091,8 @@ body.light-mode .edu-icon { background: #3D5AFE; border: 2px solid #1A1A2E; bord
 body.light-mode .edu-degree { color: #1A1A2E; }
 body.light-mode .edu-school { color: #3D5AFE; }
 body.light-mode .edu-location { color: #6B6B8D; }
+body.light-mode .edu-meta-item { color: #6B6B8D; }
+body.light-mode .edu-meta-item i { color: #3D5AFE; }
 body.light-mode .edu-badge { background: #FFF3E0; border: 2px solid #1A1A2E; border-radius: 6px; }
 body.light-mode .edu-badge i { color: #FF6D00; }
 body.light-mode .edu-badge span { color: #1A1A2E; }
