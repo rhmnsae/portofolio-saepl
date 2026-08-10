@@ -738,9 +738,8 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(el);
         });
 
-        // Re-run counter and skill bar animations (needed for BFCache restores)
+        // Re-run counter animations (needed for BFCache restores)
         animateCounters();
-        animateSkillBars();
     }
 
     // ===== Counter Animation =====
@@ -784,27 +783,7 @@ document.addEventListener('DOMContentLoaded', () => {
         counters.forEach(counter => counterObserver.observe(counter));
     }
 
-    // ===== Skill Progress Bars =====
-    function animateSkillBars() {
-        const skillBars = document.querySelectorAll('.skill-progress');
 
-        // Reset bars first so they re-animate on BFCache restore
-        skillBars.forEach(bar => {
-            bar.style.width = '0%';
-        });
-
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const width = entry.target.getAttribute('data-width');
-                    entry.target.style.width = width + '%';
-                    skillObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-
-        skillBars.forEach(bar => skillObserver.observe(bar));
-    }
 
     // ===== Portfolio Filter =====
     const filterBtns = document.querySelectorAll('.filter-btn');
@@ -903,31 +882,19 @@ document.addEventListener('DOMContentLoaded', () => {
             hero.style.transform = `translateY(${window.scrollY * 0.15}px)`;
             hero.style.opacity = 1 - (window.scrollY / (window.innerHeight * 0.8));
         }
+
+        // Hide scroll indicator when user scrolls down
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        if (scrollIndicator) {
+            if (window.scrollY > 80) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+            }
+        }
     });
 
-    // ===== Tilt Effect =====
-    if (window.matchMedia('(pointer: fine)').matches) {
-        const tiltCards = document.querySelectorAll('.portfolio-card, .skill-category');
 
-        tiltCards.forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-
-                const rotateX = (y - centerY) / 20;
-                const rotateY = (centerX - x) / 20;
-
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-            });
-
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = '';
-            });
-        });
-    }
 
 });
 
