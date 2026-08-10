@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Force no-cache: prevent browser from serving stale cached files -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description"
+        content="Portfolio of Saepul Rohman - IT Support Enthusiast | Hardware, Software & Network Troubleshooting. Bachelor of Informatics Engineering.">
+    <meta name="keywords" content="Saepul Rohman, Portfolio, IT Support, Web Developer, Bandung">
+    <meta name="author" content="Saepul Rohman">
+    <title>Saepul Rohman | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=20260430neo">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" id="navMenu">
+                <!-- Sidebar Header with Profile -->
+                <div class="sidebar-header">
+                    <div class="sidebar-profile">
+                        <div class="sidebar-avatar">
+                            <img src="image/foto-saya/me.jpg" alt="Saepul Rohman" class="img-dark-mode">
+                            <img src="image/foto-saya/saya.jpg" alt="Saepul Rohman" class="img-light-mode">
+                        </div>
+                        <div class="sidebar-profile-info">
+                            <div class="sidebar-name">Saepul Rohman</div>
+                            <div class="sidebar-role">IT Support & Web Dev</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Divider -->
+                <div class="sidebar-divider">
+                    <span>Navigation</span>
+                </div>
+
+                <!-- Nav List -->
+                <ul class="sidebar-nav-list">
+                    <li>
+                        <a href="#hero" class="nav-link active" data-section="hero">
+                            <span class="nav-link-icon"><i class="fas fa-home"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_home">Home</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link" data-section="about">
+                            <span class="nav-link-icon"><i class="fas fa-user"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_about">About</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="nav-link" data-section="experience">
+                            <span class="nav-link-icon"><i class="fas fa-briefcase"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_experience">Experience</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link" data-section="skills">
+                            <span class="nav-link-icon"><i class="fas fa-code"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_skills">Skills</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <span class="nav-link-icon"><i class="fas fa-th-large"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_portfolio">Portfolio</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link" data-section="contact">
+                            <span class="nav-link-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="nav-link-text" data-i18n="nav_contact">Contact</span>
+                            <span class="nav-link-arrow"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Sidebar Footer -->
+                <div class="sidebar-footer">
+                    <div class="sidebar-footer-label">Connect with me</div>
+                    <div class="sidebar-social-links">
+                        <a href="https://github.com/rhmnsae" target="_blank" rel="noopener noreferrer" class="sidebar-social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saeplll/" target="_blank" rel="noopener noreferrer" class="sidebar-social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/6283842707945" target="_blank" rel="noopener noreferrer" class="sidebar-social-btn" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:saepulrohman3445@gmail.com" class="sidebar-social-btn" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <!-- Language Switcher -->
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang="en" title="English">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="id" title="Bahasa Indonesia">ID</button>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-animate="fade-up" data-i18n="hero_greeting">Hello, I'm</p>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="100">
+                    <span class="name-first">Saepul</span>
+                    <span class="name-last">Rohman</span>
+                </h1>
+                <div class="hero-title-wrapper" data-animate="fade-up" data-delay="200">
+                    <span class="hero-title-label" data-i18n="hero_iam">I'm a</span>
+                    <span class="hero-title" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description" data-animate="fade-up" data-delay="300" data-i18n="hero_desc">
+                    IT Support Enthusiast | Hardware, Software & Network Troubleshooting
+                </p>
+                <div class="hero-socials" data-animate="fade-up" data-delay="400">
+                    <a href="mailto:saepulrohman3445@gmail.com" class="social-circle" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6283842707945" target="_blank" rel="noopener noreferrer"
+                        class="social-circle" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/saeplll/" target="_blank" rel="noopener noreferrer"
+                        class="social-circle" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/rhmnsae" target="_blank" rel="noopener noreferrer" class="social-circle"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="hero-cta" data-animate="fade-up" data-delay="450">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span data-i18n="hero_btn_portfolio">View Portfolio</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span data-i18n="hero_btn_contact">Contact Me</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="500">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero_stat_exp">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero_stat_company">Companies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="36">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="hero_stat_projects">Projects Done</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-left" data-delay="200">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-border"></div>
+                    <div class="hero-image-container" id="hero-scratch-container">
+                        <img src="image/foto-saya/me.jpg" alt="Saepul Rohman" class="hero-img-base img-dark-mode">
+                        <img src="image/foto-saya/saya.jpg" alt="Saepul Rohman" class="hero-img-base img-light-mode">                    </div>
+                    <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
+                    <div class="floating-badge badge-2"><i class="fas fa-server"></i></div>
+                    <div class="floating-badge badge-3"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="600">
+            <span data-i18n="hero_scroll">Scroll down</span>
+            <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="about_title">Get to Know Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-animate="fade-right">
+                    <div class="about-image-card">
+                        <img src="image/foto-saya/me.jpg" alt="Saepul Rohman" class="img-dark-mode"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="image/foto-saya/saya.jpg" alt="Saepul Rohman" class="img-light-mode"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">4+</span>
+                        <span class="exp-text" data-i18n-html="about_exp_text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-info" data-animate="fade-left">
+                    <h3 class="about-subtitle" data-i18n="about_subtitle">IT Support Enthusiast | Hardware, Software &
+                        Network Troubleshooting</h3>
+                    <p class="about-text" data-i18n-html="about_text_1">
+                        Bachelor of Informatics Engineering graduate from <strong>Adhirajasa Reswara Sanjaya
+                            University</strong> with strong interest and capabilities in IT Support. Experienced in data
+                        management, device maintenance, and basic system & network troubleshooting through part-time and
+                        internship roles.
+                    </p>
+                    <p class="about-text" data-i18n-html="about_text_2">
+                        Skilled in software–hardware installation, network connectivity checks, and office IT device
+                        maintenance. Detail-oriented, responsible, and highly motivated to support efficient and stable
+                        IT operations.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="detail-label" data-i18n="about_location_label">Location</span>
+                                <span class="detail-value" data-i18n="about_location_value">Bandung, West Java</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="detail-label" data-i18n="about_edu_label">Education</span>
+                                <span class="detail-value" data-i18n="about_edu_value">Bachelor of Informatics
+                                    Engineering</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <span class="detail-label" data-i18n="about_univ_label">University</span>
+                                <span class="detail-value">ARS University</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span data-i18n="hero_btn_contact">Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="exp_title">My Career Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Timeline Item: Mutatit -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div>
+                                    <h3 class="timeline-company" data-i18n="exp_mutatit_title">Full Stack Web Developer</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> Mutatit – Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-freelance">Freelance</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> <span data-i18n="exp_mutatit_date">Jan 2026 – Present</span></span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp_mutatit_task1">Develop websites and web applications (front-end & back-end), including UI design, API integration, database management, and feature implementation.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp_mutatit_task2">Perform deployment, maintenance, and troubleshooting to ensure optimal, secure, and stable system operations.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>UI Design</span><span>Web Development</span><span>Deployment</span><span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Token Maker</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> PT. Nolimit Teknologi
+                                        Indonesia - Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-freelance">Freelance</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Mar 2025 – <span
+                                        data-i18n="exp_present">Present</span></span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp1_task1">Created and managed
+                                    social media accounts (Twitter, Instagram, YouTube) for scraping purposes.</span>
+                            </li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp1_task2">Uploaded accounts to
+                                    database, created documentation, and handled account issues (VPN, OTP,
+                                    banned).</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Social Media</span><span>Database</span><span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-database"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Data Quality Assurance</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> PT. Nolimit Teknologi
+                                        Indonesia - Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-freelance">Freelance</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2024 – Mar
+                                    2025</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp2_task1">Managed daily
+                                    operations and ensured data accuracy and reliability.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp2_task2">Handled data requests
+                                    and resolved data-related issues efficiently.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp2_task3">Collaborated with
+                                    cross-functional stakeholders to gather, clarify, and communicate data
+                                    requirements.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Data QA</span><span>Python</span><span>Linux</span><span>SSH
+                                Server</span><span>Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-headset"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">IT Support (<span
+                                            data-i18n="exp_intern">Internship</span>)</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> PT. Dago Alam Indah -
+                                        Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-magang" data-i18n="badge_intern">Internship</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Dec 2023 – Mei
+                                    2024</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp3_task1">Performed network
+                                    maintenance, troubleshooting, device installation, and technical support.</span>
+                            </li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp3_task2">Developed warehouse
+                                    application and tenant attendance application.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp3_task3">Created banners, social
+                                    media content, and character designs.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>IT Support</span><span>Networking</span><span>Web
+                                Development</span><span>Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 (New) -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <div>
+                                    <h3 class="timeline-company" data-i18n="exp6_title">Complete Mobile Engineer Career with Flutter Mentee</h3>
+                                    <p class="timeline-location"><i class="fas fa-building"></i> <span data-i18n="exp6_company">Alterra Academy</span> - Internship</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-magang" data-i18n="badge_intern">Internship</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Aug 2023 - Dec 2023</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp6_task1">Learned the fundamentals of mobile programming using the Flutter framework and Dart programming language.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp6_task2">Implemented state management and API integration in mobile application development.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp6_task3">Built responsive and interactive user interfaces (UI) according to the provided designs.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Flutter</span><span>Dart</span><span>Mobile Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <div>
+                                    <h3 class="timeline-company" data-i18n="exp4_title">Phone & Computer Technician</h3>
+                                    <p class="timeline-location"><i class="fas fa-home"></i> oprekHP – Bandung (<span
+                                            data-i18n="exp_parttime">Part-time</span>)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-parttime">Part-time</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Feb 2022 – <span
+                                        data-i18n="exp_present">Present</span></span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp4_task1">Serviced Android and
+                                    iPhone devices, including software and hardware troubleshooting.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp4_task2">Handled Android system
+                                    modifications such as rooting, custom ROM installation, TWRP, bootloader unlocking,
+                                    and iPhone bypass.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp4_task3">Performed computer and
+                                    laptop repair and maintenance, including OS installation and device
+                                    troubleshooting.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Mobile
+                                Repair</span><span>Android</span><span>iOS</span><span>Computer</span><span>Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-shopping-bag"></i></div>
+                                <div>
+                                    <h3 class="timeline-company" data-i18n="exp5_title">Marketplace Admin</h3>
+                                    <p class="timeline-location"><i class="fas fa-store"></i> HD Official – Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge badge-fulltime">Full-time</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> <span data-i18n="exp5_date">Oct 2021 – Nov 2023</span></span>
+                            </div>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp5_task1">Manage products in Shopee stores, such as uploading products, updating stock, prices, and creating promotions.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp5_task2">Monitor sales and create store performance reports to help increase sales.</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="exp5_task3">Serve customer inquiries, process orders, arrange shipping, and handle customer complaints.</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>E-commerce</span><span>Shopee</span><span>Customer Service</span><span>Product Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizational Experience -->
+            <div class="section-header" data-animate="fade-up" style="margin-top: 60px;">
+                <h2 class="section-title" data-i18n="org_title">Organizational Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Org Item 1 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-camera"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Multimedia</h3>
+                                    <p class="timeline-location"><i class="fas fa-users"></i> UKM Fastabiqul Khairat</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge"
+                                    style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);"
+                                    data-i18n="badge_org">Organization</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 – 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Org Item 2 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-camera"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Multimedia</h3>
+                                    <p class="timeline-location"><i class="fas fa-users"></i> DKR Ciparay</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge"
+                                    style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);"
+                                    data-i18n="badge_org">Organization</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2019 – 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Org Item 3 -->
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company-info">
+                                <div class="company-icon"><i class="fas fa-camera"></i></div>
+                                <div>
+                                    <h3 class="timeline-company">Multimedia</h3>
+                                    <p class="timeline-location"><i class="fas fa-users"></i> Pramuka MAN 1 Bandung</p>
+                                </div>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-badge"
+                                    style="background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3);"
+                                    data-i18n="badge_org">Organization</span>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2018 – 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="skills_title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Row 1: Programming & IT Support -->
+                <div class="skill-category" data-animate="fade-up">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-code"></i></div>
+                        <h3 data-i18n="skills_cat_prog">Programming & Web</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">HTML & CSS</span></div>
+                        <div class="skill-item"><span class="skill-name">JavaScript</span></div>
+                        <div class="skill-item"><span class="skill-name">Python</span></div>
+                        <div class="skill-item"><span class="skill-name">MySQL</span></div>
+                        <div class="skill-item"><span class="skill-name">Flutter</span></div>
+                        <div class="skill-item"><span class="skill-name">PHP</span></div>
+                        <div class="skill-item"><span class="skill-name">React JS</span></div>
+                        <div class="skill-item"><span class="skill-name">Laravel</span></div>
+                        <div class="skill-item"><span class="skill-name">Bootstrap</span></div>
+                        <div class="skill-item"><span class="skill-name">PostgreSQL</span></div>
+                        <div class="skill-item"><span class="skill-name">Git & GitHub</span></div>
+                        <div class="skill-item"><span class="skill-name">IoT (Internet of Things)</span></div>
+                    </div>
+                </div>
+
+                <!-- Row 1 Right: IT Support & Networking -->
+                <div class="skill-category" data-animate="fade-up" data-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-tools"></i></div>
+                        <h3>IT Support & Networking</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Technical Support</span></div>
+                        <div class="skill-item"><span class="skill-name">Network Support</span></div>
+                        <div class="skill-item"><span class="skill-name">Linux</span></div>
+                        <div class="skill-item"><span class="skill-name">Hardware Troubleshooting</span></div>
+                        <div class="skill-item"><span class="skill-name">Mobile Repair</span></div>
+                        <div class="skill-item"><span class="skill-name">Ubuntu / Ubuntu Server</span></div>
+                    </div>
+                </div>
+
+                <!-- Row 2 Left: Design & Multimedia -->
+                <div class="skill-category" data-animate="fade-up" data-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-palette"></i></div>
+                        <h3 data-i18n="skills_cat_design">Design & Multimedia</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Figma</span></div>
+                        <div class="skill-item"><span class="skill-name">Adobe Illustrator</span></div>
+                        <div class="skill-item"><span class="skill-name">Adobe Photoshop</span></div>
+                        <div class="skill-item"><span class="skill-name">Canva</span></div>
+                        <div class="skill-item"><span class="skill-name">Adobe Premiere Pro</span></div>
+                        <div class="skill-item"><span class="skill-name">CapCut</span></div>
+                        <div class="skill-item"><span class="skill-name">Photography & Camera</span></div>
+                    </div>
+                </div>
+
+                <!-- Row 2 Right: Office & Productivity -->
+                <div class="skill-category" data-animate="fade-up" data-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-file-alt"></i></div>
+                        <h3 data-i18n="skills_cat_office">Office & Productivity</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Microsoft Office Suite</span></div>
+                        <div class="skill-item"><span class="skill-name">Google Workspace</span></div>
+                    </div>
+                </div>
+
+                <!-- Row 3: Soft Skills (Horizontal Span) -->
+                <div class="skill-category" data-animate="fade-up" data-delay="400">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper"><i class="fas fa-brain"></i></div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item"><span data-i18n="soft_problem">Problem Solving</span></div>
+                        <div class="soft-skill-item"><span data-i18n="soft_team">Teamwork</span></div>
+                        <div class="soft-skill-item"><span data-i18n="soft_fast">Fast Learner</span></div>
+                        <div class="soft-skill-item"><span data-i18n="soft_adaptive">Adaptive</span></div>
+                        <div class="soft-skill-item"><span data-i18n="soft_critical">Critical Thinking</span></div>
+                        <div class="soft-skill-item"><span data-i18n="soft_detail">Attention to Detail</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="portfolio_title">My Recent Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="landing">Landing Page</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-category="iot" data-animate="fade-up">
+                    <div class="portfolio-image">
+                        <img src="image/tempat-sampah-otomatis/1.jpeg" alt="Tempat Sampah Otomatis"
+                            class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryIot1()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">IoT</span>
+                        <h3 class="portfolio-title" data-i18n="proj1_title">Automatic Trash Bin</h3>
+                        <p class="portfolio-desc" data-i18n="proj1_desc">IoT-based automatic trash bin using ultrasonic
+                            sensor to detect objects and servo motor to open the lid automatically.</p>
+                        <div class="portfolio-tech"><span>Arduino</span><span>Ultrasonic Sensor</span><span>Servo
+                                Motor</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/oprek-website/1.png" alt="oprekHP Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://oprekhp.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title" data-i18n="proj2_title">oprekHP Website</h3>
+                        <p class="portfolio-desc" data-i18n="proj2_desc">Website for phone and computer service
+                            business, providing information about repair services, pricing, and contact.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/aplikasi-harsaedu/home.png" alt="HarsaEdu App" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryMobile()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj3_title">HarsaEdu - LMS App</h3>
+                        <p class="portfolio-desc" data-i18n="proj3_desc">Learning Management System mobile application
+                            with class packages, subscriptions, recommendations, and notification features.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>REST API</span></div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="ai" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/sentimeter/1.png" alt="Sentimeter" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://rhmnsae-sentimeter.hf.space/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">AI / Machine Learning</span>
+                        <h3 class="portfolio-title" data-i18n="proj9_title">Sentimeter: Sentiment Analysis</h3>
+                        <p class="portfolio-desc" data-i18n="proj9_desc">Free sentiment analysis tool for X/Twitter with
+                            interactive and easy-to-understand data visualization.</p>
+                        <div class="portfolio-tech">
+                            <span>Web App</span><span>Sentiment Analysis</span><span>Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/data-mbg-website/1.png" alt="Data MBG Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://rw16sindangsari.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj5_title">Data MBG Website</h3>
+                        <p class="portfolio-desc" data-i18n="proj5_desc">Web application for recording data of babies,
+                            pregnant women, and breastfeeding mothers who receive MBG (Makanan Bergizi Gratis).</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/web-anilist/1.png" alt="Anilist Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://jadwa-anime-website.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj6_title">Anilist Website</h3>
+                        <p class="portfolio-desc" data-i18n="proj6_desc">Web application to view anime release
+                            schedules, featuring data fetched directly from the MyAnimeList API (Jikan API).</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="iot" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/mobil-remote-bluetooth/1.jpeg" alt="Mobil Remote Bluetooth"
+                            class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Photo" onclick="openGalleryIot2()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">IoT</span>
+                        <h3 class="portfolio-title" data-i18n="proj7_title">Bluetooth Remote Car</h3>
+                        <p class="portfolio-desc" data-i18n="proj7_desc">Bluetooth-controlled remote car using Arduino
+                            and HC-05 module, operated via smartphone application.</p>
+                        <div class="portfolio-tech"><span>Arduino</span><span>Bluetooth HC-05</span><span>Motor
+                                Driver</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/xscraper/1.png" alt="X/Twitter Scraper" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://xscraper.fwh.is/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj8_title">X/Twitter Scraper</h3>
+                        <p class="portfolio-desc" data-i18n="proj8_desc">Web-based tool to generate X/Twitter data
+                            crawling code that can be run on Google Colab, with export feature to CSV based on keywords
+                            or profiles.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>Google Colab</span><span>Data Crawling</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/dzikir/dzikir-1.png" alt="Dzikir App"
+                            class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://dzikir-pagi-petang.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                     class="portfolio-btn" title="Visit Site"><i
+                                         class="fas fa-external-link-alt"></i></a>
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryDzikir()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj10_title">Dzikir App</h3>
+                        <p class="portfolio-desc" data-i18n="proj10_desc">Mobile application for morning and evening
+                            dhikr, helping users to maintain their daily spiritual routine.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="mobile" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/pinjam-barang/borrow-1.png"
+                            alt="Borrowing Goods App" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="portfolio-btn" title="View Gallery" onclick="openGalleryPinjam()"><i
+                                        class="fas fa-images"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Mobile App</span>
+                        <h3 class="portfolio-title" data-i18n="proj11_title">Borrowing Goods App</h3>
+                        <p class="portfolio-desc" data-i18n="proj11_desc">Neighborhood-based platform to facilitate
+                            borrowing and lending household items between neighbors.</p>
+                        <div class="portfolio-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                    </div>
+                </div>
+
+
+
+                <!-- Landing Page Template 1 - B2B / KORPORAT -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/1.png" alt="B2B / KORPORAT" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_9d2dcac710c8/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">B2B / KORPORAT</h3>
+                        <p class="portfolio-desc">Landing page profesional untuk perusahaan dan bisnis B2B. Tampilan
+                            tegas, kepercayaan merek tinggi.</p>
+                        <div class="portfolio-tech"><span>B2B</span><span>Corporate</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 2 - F&B / KULINER -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/2.png" alt="F&B / KULINER" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_a529b32d1385/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">F&B / KULINER</h3>
+                        <p class="portfolio-desc">Landing page restoran atau kedai makanan. Tampilkan menu, dan sistem
+                            reservasi meja.</p>
+                        <div class="portfolio-tech"><span>F&B</span><span>Culinary</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 3 - RITEL / FASHION -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/3.png" alt="RITEL / FASHION" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_2b2adee682fe/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">RITEL / FASHION</h3>
+                        <p class="portfolio-desc">Landing page toko fashion minimalis editorial.</p>
+                        <div class="portfolio-tech"><span>Retail</span><span>Fashion</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 4 - KONSULTAN / FREELANCE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/4.png" alt="KONSULTAN / FREELANCE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_e9449e5f3d3a/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">KONSULTAN / FREELANCE</h3>
+                        <p class="portfolio-desc">Landing page personal brand untuk freelancer & konsultan. Portofolio,
+                            keahlian, dan form kontak.</p>
+                        <div class="portfolio-tech"><span>Consultant</span><span>Freelance</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 5 - ACARA / FESTIVAL -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/5.png" alt="ACARA / FESTIVAL" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_5131d7c0159d/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">ACARA / FESTIVAL</h3>
+                        <p class="portfolio-desc">Landing page acara & festival dengan countdown timer, penjualan tiket,
+                            dan lineup artis/pembicara.</p>
+                        <div class="portfolio-tech"><span>Event</span><span>Festival</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 6 - KLINIK / KESEHATAN -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/6.png" alt="KLINIK / KESEHATAN" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_36104324d66e/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">KLINIK / KESEHATAN</h3>
+                        <p class="portfolio-desc">Landing page klinik & layanan medis. Profil dokter, jadwal praktik,
+                            dan sistem reservasi pasien online.</p>
+                        <div class="portfolio-tech"><span>Clinic</span><span>Health</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 7 - PROPERTI / REAL ESTATE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/7.png" alt="PROPERTI / REAL ESTATE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_0416b475d532/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PROPERTI / REAL ESTATE</h3>
+                        <p class="portfolio-desc">Landing page properti premium. Listing rumah & apartemen, filter
+                            pencarian lokasi, harga, dan tipe hunian.</p>
+                        <div class="portfolio-tech"><span>Property</span><span>Real Estate</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 8 - COWORKING SPACE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/8.png" alt="COWORKING SPACE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_8126f8f39f73/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">COWORKING SPACE</h3>
+                        <p class="portfolio-desc">Landing page ruang kerja bersama. Tipe ruang, paket membership, dan
+                            fasilitas profesional untuk freelancer & tim.</p>
+                        <div class="portfolio-tech"><span>Coworking</span><span>Workspace</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 9 - TEKNOLOGI / STARTUP -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/9.png" alt="TEKNOLOGI / STARTUP" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_3067fa6c632b/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">TEKNOLOGI / STARTUP</h3>
+                        <p class="portfolio-desc">Landing page produk SaaS & startup teknologi Dark futuristik.</p>
+                        <div class="portfolio-tech"><span>Technology</span><span>Startup</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 10 - PENDIDIKAN / KURSUS -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/10.png" alt="PENDIDIKAN / KURSUS" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_7175f3f91e02/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PENDIDIKAN / KURSUS</h3>
+                        <p class="portfolio-desc">Landing page platform belajar online. Katalog kursus, dan pendaftaran
+                            gratis.</p>
+                        <div class="portfolio-tech"><span>Education</span><span>Course</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 11 - PERTANIAN / AGRITECH -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/11.png" alt="PERTANIAN / AGRITECH" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_c8a9c6df1a89/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PERTANIAN / AGRITECH</h3>
+                        <p class="portfolio-desc">Landing page platform pertanian modern. Teknologi IoT, pasar digital,
+                            dan konsultasi agronomi untuk petani.</p>
+                        <div class="portfolio-tech"><span>Agriculture</span><span>Agritech</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 12 - OTOMOTIF / BENGKEL -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/12.png" alt="OTOMOTIF / BENGKEL" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_15204c2b2ce1/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">OTOMOTIF / BENGKEL</h3>
+                        <p class="portfolio-desc">Landing page bengkel & servis kendaraan. Daftar layanan, estimasi
+                            biaya, booking online, dan testimoni.</p>
+                        <div class="portfolio-tech"><span>Automotive</span><span>Workshop</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 13 - TRAVEL / PARIWISATA -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/13.png" alt="TRAVEL / PARIWISATA" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_45107c40e4c5/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">TRAVEL / PARIWISATA</h3>
+                        <p class="portfolio-desc">Landing page agen travel & wisata. Paket destinasi, galeri, harga, dan
+                            formulir pemesanan perjalanan.</p>
+                        <div class="portfolio-tech"><span>Travel</span><span>Tourism</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 14 - KEUANGAN / FINTECH -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/14.png" alt="KEUANGAN / FINTECH" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_376cafec9c65/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">KEUANGAN / FINTECH</h3>
+                        <p class="portfolio-desc">Landing page aplikasi keuangan & fintech.</p>
+                        <div class="portfolio-tech"><span>Finance</span><span>Fintech</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 15 - BARBERSHOP / SALON -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/15.png" alt="BARBERSHOP / SALON" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_a41b9b29004c/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">BARBERSHOP / SALON</h3>
+                        <p class="portfolio-desc">Landing page barbershop premium. Daftar layanan, profil barber, galeri
+                            hasil potongan, dan sistem booking online.</p>
+                        <div class="portfolio-tech"><span>Barbershop</span><span>Salon</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 16 - ARTISAN BAKERY -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/16.png" alt="ARTISAN BAKERY" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_26caf0c07687/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">ARTISAN BAKERY</h3>
+                        <p class="portfolio-desc">Landing page hangat bernuansa cokelat klasik untuk toko roti, kue
+                            bolu, atau pastry kekinian.</p>
+                        <div class="portfolio-tech"><span>Bakery</span><span>Pastry</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 17 - DESSERT & GELATO -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="50">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/17.png" alt="DESSERT & GELATO" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_c0dd5f0fa755/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">DESSERT & GELATO</h3>
+                        <p class="portfolio-desc">Landing page playful pastel modern untuk dessert cafe, toko gelato,
+                            atau modern sweets shop.</p>
+                        <div class="portfolio-tech"><span>Dessert</span><span>Cafe</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 18 - CUSTOM CAKE -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/18.png" alt="CUSTOM CAKE" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_504c62eeac19/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">CUSTOM CAKE</h3>
+                        <p class="portfolio-desc">Landing page elegan dan minimalis premium untuk pembuat kue pengantin
+                            dan custom cake mewah.</p>
+                        <div class="portfolio-tech"><span>Custom Cake</span><span>Bakery</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 19 - PREMIUM SUSHI -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="150">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/19.png" alt="PREMIUM SUSHI" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_c8977f126f88/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PREMIUM SUSHI</h3>
+                        <p class="portfolio-desc">Landing page elegan bernuansa deep-dark & gold, untuk restoran sushi
+                            autentik atau fine dining.</p>
+                        <div class="portfolio-tech"><span>Sushi</span><span>Restaurant</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 20 - TOKYO RAMEN -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/20.png" alt="TOKYO RAMEN" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_317df3df326d/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">TOKYO RAMEN</h3>
+                        <p class="portfolio-desc">Landing page bold & street-style untuk kedai ramen autentik dengan
+                            menu signature bowls.</p>
+                        <div class="portfolio-tech"><span>Ramen</span><span>Restaurant</span></div>
+                    </div>
+                </div>
+                <!-- Landing Page Template 21 - PREMIUM GRILL -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-image">
+                        <img src="image/landingpage/21.png" alt="PREMIUM GRILL" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/demos/d_92bd71e54c4c/" target="_blank"
+                                    rel="noopener noreferrer" class="portfolio-btn" title="Visit Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title">PREMIUM GRILL</h3>
+                        <p class="portfolio-desc">Landing page berkarakter smoky & rustic, cocok untuk premium
+                            steakhouse berkonsep open-fire.</p>
+                        <div class="portfolio-tech"><span>Grill</span><span>Steakhouse</span></div>
+                    </div>
+                </div>
+                <!-- Landingku - Web Development -->
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/landingku/1.png" alt="Landingku" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://landingku.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title" data-i18n="proj13_title">Landingku</h3>
+                        <p class="portfolio-desc" data-i18n="proj13_desc">Landing page creation service website with
+                            over 21 diverse and professional templates ready to use.</p>
+                        <div class="portfolio-tech"><span>Web App</span><span>Landing Page</span><span>Business</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="image/mutatit/1.png" alt="Mutatit" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Landing Page</span>
+                        <h3 class="portfolio-title" data-i18n="proj14_title">Mutatit - Web Tools</h3>
+                        <p class="portfolio-desc" data-i18n="proj14_desc">Affordable web tools development service
+                            providing various digital automation and utility solutions.</p>
+                        <div class="portfolio-tech"><span>Web Tools</span><span>Automation</span><span>SaaS</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="image/uang-masuk/1.png" alt="Uang Masuk" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://uangmasuk.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                    class="portfolio-btn" title="Visit Site"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj15_title">Uang Masuk - POS Kasir</h3>
+                        <p class="portfolio-desc" data-i18n="proj15_desc">Point of Sale (POS) cashier and complete
+                            financial reporting website designed specifically for MSMEs (UMKM).</p>
+                        <div class="portfolio-tech"><span>POS</span><span>Accounting</span><span>UMKM</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="image/sukses-psikotes/1.jpg" alt="Sukses Psikotes" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://sukses-psikotes.mutatit.com/" target="_blank" rel="noopener noreferrer"
+                                     class="portfolio-btn" title="Visit Site"><i
+                                         class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj16_title">Sukses Psikotes</h3>
+                        <p class="portfolio-desc" data-i18n="proj16_desc">Online platform for psychological exam practice and test preparation, featuring timer and comprehensive result analysis.</p>
+                        <div class="portfolio-tech"><span>Psychological Test</span><span>E-Exam</span><span>Education</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web" data-animate="fade-up" data-delay="400">
+                    <div class="portfolio-image">
+                        <img src="image/kyuarukodo/1.jpg" alt="Kyuarukodo" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://kyuarukodo.com/" target="_blank" rel="noopener noreferrer"
+                                     class="portfolio-btn" title="Visit Site"><i
+                                         class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category-tag">Web Development</span>
+                        <h3 class="portfolio-title" data-i18n="proj17_title">Kyuarukodo - QR Code</h3>
+                        <p class="portfolio-desc" data-i18n="proj17_desc">Modern and customizable QR code generator tool, allowing users to create QR codes for URLs, text, and contact info easily.</p>
+                        <div class="portfolio-tech"><span>QR Generator</span><span>Branding</span><span>SaaS</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="edu_title">Education History</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card" data-animate="fade-up">
+                <div class="edu-icon"><i class="fas fa-university"></i></div>
+                <div class="edu-info">
+                    <h3 class="edu-degree" data-i18n="edu_degree">Bachelor of Informatics Engineering</h3>
+                    <p class="edu-school">Universitas Adhirajasa Reswara Sanjaya (ARS University)</p>
+                    <div class="edu-meta">
+                        <p class="edu-meta-item"><i class="fas fa-map-marker-alt"></i> <span
+                                data-i18n="about_location_value">Bandung, West Java</span></p>
+                        <p class="edu-meta-item"><i class="fas fa-calendar-alt"></i> <span
+                                data-i18n="edu_year">Angkatan 2021 — 2025</span></p>
+                        <p class="edu-meta-item"><i class="fas fa-star"></i> <span
+                                data-i18n="edu_gpa">IPK 3.92 / 4.00</span></p>
+                    </div>
+                </div>
+                <div class="edu-badge">
+                    <i class="fas fa-award"></i>
+                    <span data-i18n="edu_badge">Bachelor</span>
+                </div>
+            </div>
+            <div class="education-card" data-animate="fade-up" data-delay="100" style="margin-top: 24px;">
+                <div class="edu-icon" style="background: linear-gradient(135deg, #00b894, #00cec9);">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="edu-info">
+                    <h3 class="edu-degree" data-i18n="cert_title">Complete Mobile Engineer Career with Flutter</h3>
+                    <p class="edu-school">Alterra Academy — Kampus Merdeka</p>
+                    <div class="edu-meta">
+                        <p class="edu-meta-item"><i class="fas fa-calendar-alt"></i> 2023</p>
+                    </div>
+                </div>
+                <div class="edu-badge" style="background: rgba(0, 184, 148, 0.1);">
+                    <i class="fas fa-certificate" style="color: #00b894;"></i>
+                    <span data-i18n="cert_badge" style="color: #00b894;">Bootcamp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-animate="fade-right">
+                    <h3 class="contact-subtitle" data-i18n="contact_subtitle">Don't hesitate to reach out</h3>
+                    <p class="contact-text" data-i18n="contact_text">
+                        I'm always open to new opportunities, collaborations, or just discussing about technology. Feel
+                        free to contact me!
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label" data-i18n="contact_phone">Phone</span>
+                                <a href="tel:+6283842707945" class="contact-card-value">+62 838 4270 7945</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Email</span>
+                                <a href="mailto:saepulrohman3445@gmail.com"
+                                    class="contact-card-value">saepulrohman3445@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label" data-i18n="about_location_label">Location</span>
+                                <span class="contact-card-value" data-i18n="contact_location_value">Bandung, West Java,
+                                    Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:saepulrohman3445@gmail.com" class="social-link" title="Email"
+                            aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/6283842707945" class="social-link" title="WhatsApp" aria-label="WhatsApp"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/saeplll/" class="social-link" title="LinkedIn"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/rhmnsae" class="social-link" title="GitHub" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="form_name">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" required data-i18n-placeholder="form_name_ph"
+                                    placeholder="Enter your name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required
+                                    data-i18n-placeholder="form_email_ph" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label" data-i18n="form_subject">Subject</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" required
+                                    data-i18n-placeholder="form_subject_ph" placeholder="Message subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="form_message">Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" rows="5" required
+                                    data-i18n-placeholder="form_message_ph"
+                                    placeholder="Write your message..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span data-i18n="form_send">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p class="footer-desc" data-i18n="footer_desc">IT Support Enthusiast | Hardware, Software &amp;
+                        Network Troubleshooting</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="nav_about">About</a></li>
+                        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-info">
+                    <h4 data-i18n="nav_contact">Contact</h4>
+                    <p><i class="fas fa-envelope"></i> saepulrohman3445@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +62 838 4270 7945</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saepul Rohman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-overlay" onclick="closeGallery()"></div>
+        <button class="gallery-close" onclick="closeGallery()"><i class="fas fa-times"></i></button>
+        <button class="gallery-nav gallery-prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <div class="gallery-content">
+            <img id="galleryImage" src="" alt="Gallery Image" class="gallery-img">
+            <div class="gallery-caption" id="galleryCaption"></div>
+            <div class="gallery-counter" id="galleryCounter"></div>
+        </div>
+        <button class="gallery-nav gallery-next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>    <script src="js/matrix.js"></script>
+    <script src="js/script.js?v=20260311"></script>
+</body>
+
+</html>
