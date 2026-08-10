@@ -100,7 +100,7 @@ const translations = {
         proj5_title: 'Data MBG Website',
         proj5_desc: 'Web application for recording data of babies, pregnant women, and breastfeeding mothers who receive MBG (Makanan Bergizi Gratis).',
 
-        proj6_title: 'Anilist Website',
+        proj6_title: 'Anime Schedule',
         proj6_desc: 'Web application to view anime release schedules, featuring data fetched directly from the MyAnimeList API (Jikan API).',
 
         proj7_title: 'Bluetooth Remote Car',
@@ -133,7 +133,7 @@ const translations = {
         proj16_desc: 'Online platform for psychological exam practice and test preparation, featuring timer and comprehensive result analysis.',
 
         proj17_title: 'Kyuarukodo - QR Code',
-        proj17_desc: 'Modern and customizable QR code generator tool, allowing users to create QR codes for URLs, text, and contact info easily.',
+        proj17_desc: 'A product QR code platform for shirts, bracelets, and keychains that displays the owner\'s profile when scanned.',
 
         // Education
         edu_tag: 'Education',
@@ -271,7 +271,7 @@ const translations = {
         proj5_title: 'Website Data MBG',
         proj5_desc: 'Aplikasi web untuk mendata bayi, ibu hamil, dan ibu menyusui yang mendapat MBG (Makanan Bergizi Gratis).',
 
-        proj6_title: 'Website Anilist',
+        proj6_title: 'Jadwal Anime',
         proj6_desc: 'Aplikasi web untuk melihat jadwal rilis anime, mengambil data langsung dari API MyAnimeList (Jikan API).',
 
         proj7_title: 'Mobil Remote Bluetooth',
@@ -304,7 +304,7 @@ const translations = {
         proj16_desc: 'Platform online untuk latihan soal ujian psikotes dan persiapan tes, dilengkapi dengan fitur pengatur waktu serta analisis hasil yang lengkap.',
 
         proj17_title: 'Kyuarukodo - QR Code',
-        proj17_desc: 'Alat pembuat kode QR modern dan dinamis, memungkinkan pengguna membuat kode QR untuk URL, teks, dan info kontak dengan mudah.',
+        proj17_desc: 'Platform pembuatan QR code produk untuk baju, gelang, dan gantungan kunci yang dapat menampilkan profil diri sendiri saat di-scan.',
 
         // Education
         edu_tag: 'Pendidikan',
