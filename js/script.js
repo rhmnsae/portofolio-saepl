@@ -146,6 +146,7 @@ const translations = {
         cert_badge: 'Bootcamp',
         exp6_title: 'Complete Mobile Engineer Career with Flutter',
         exp6_company: 'Alterra Academy',
+        exp6_date: 'Aug 2023 – Dec 2023',
         exp6_task1: 'Build Android/iOS mobile applications using the Flutter framework, integrating REST APIs, and implementing local databases.',
         exp6_task2: 'Study and understand basic Flutter development concepts, including widgets, state management, and mobile application lifecycle.',
 
@@ -316,6 +317,7 @@ const translations = {
         cert_badge: 'Bootcamp',
         exp6_title: 'Complete Mobile Engineer Career with Flutter',
         exp6_company: 'Alterra Academy',
+        exp6_date: 'Agustus 2023 – Desember 2023',
         exp6_task1: 'Membangun aplikasi mobile Android/iOS menggunakan framework Flutter, integrasi REST API, dan implementasi local database.',
         exp6_task2: 'Mempelajari dan memahami pemrograman Flutter dasar, termasuk widget, state management, dan pengembangan aplikasi mobile.',
 

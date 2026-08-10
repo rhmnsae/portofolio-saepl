@@ -1236,6 +1236,12 @@ body.light-mode .lang-divider {
     border: 1px solid rgba(0, 184, 148, 0.3);
 }
 
+.badge-org {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
 .timeline-date {
     font-size: 0.8rem;
     color: var(--text-muted);
@@ -3032,6 +3038,8 @@ body.light-mode .badge-freelance { background: #E0F7FA; color: #006064; border: 
 body.light-mode .badge-magang { background: #EDE7F6; color: #4527A0; border: 2px solid #1A1A2E; }
 body.light-mode .badge-parttime { background: #FFF3E0; color: #E65100; border: 2px solid #1A1A2E; }
 body.light-mode .badge-fulltime { background: #E8F5E9; color: #2E7D32; border: 2px solid #1A1A2E; }
+body.light-mode .badge-bootcamp { background: #E0F2F1; color: #00796B; border: 2px solid #1A1A2E; }
+body.light-mode .badge-org { background: #E8F5E9 !important; color: #10B981 !important; border: 2px solid #1A1A2E !important; }
 body.light-mode .timeline-date { color: #6B6B8D; }
 body.light-mode .timeline-tasks li { color: #3D3D5C; }
 body.light-mode .timeline-tasks li i {
