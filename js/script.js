@@ -144,11 +144,10 @@ const translations = {
         edu_gpa: 'GPA 3.92 / 4.00',
         cert_title: 'Complete Mobile Engineer Career with Flutter',
         cert_badge: 'Bootcamp',
-        exp6_title: 'Complete Mobile Engineer Career with Flutter Mentee',
+        exp6_title: 'Complete Mobile Engineer Career with Flutter',
         exp6_company: 'Alterra Academy',
-        exp6_task1: 'Learned the fundamentals of mobile programming using the Flutter framework and Dart programming language.',
-        exp6_task2: 'Implemented state management and API integration in mobile application development.',
-        exp6_task3: 'Built responsive and interactive user interfaces (UI) according to the provided designs.',
+        exp6_task1: 'Build Android/iOS mobile applications using the Flutter framework, integrating REST APIs, and implementing local databases.',
+        exp6_task2: 'Study and understand basic Flutter development concepts, including widgets, state management, and mobile application lifecycle.',
 
         // Contact
         contact_tag: 'Contact',
@@ -315,11 +314,10 @@ const translations = {
         edu_gpa: 'IPK 3.92 / 4.00',
         cert_title: 'Complete Mobile Engineer Career with Flutter',
         cert_badge: 'Bootcamp',
-        exp6_title: 'Complete Mobile Engineer Career with Flutter Mentee',
+        exp6_title: 'Complete Mobile Engineer Career with Flutter',
         exp6_company: 'Alterra Academy',
-        exp6_task1: 'Mempelajari dasar-dasar pemrograman mobile menggunakan framework Flutter dan bahasa pemrograman Dart.',
-        exp6_task2: 'Mengimplementasikan state management dan integrasi API dalam pengembangan aplikasi mobile.',
-        exp6_task3: 'Membangun antarmuka pengguna (UI) yang responsif dan interaktif sesuai dengan desain yang diberikan.',
+        exp6_task1: 'Membangun aplikasi mobile Android/iOS menggunakan framework Flutter, integrasi REST API, dan implementasi local database.',
+        exp6_task2: 'Mempelajari dan memahami pemrograman Flutter dasar, termasuk widget, state management, dan pengembangan aplikasi mobile.',
 
         // Contact
         contact_tag: 'Kontak',
